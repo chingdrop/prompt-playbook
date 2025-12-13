@@ -5,6 +5,7 @@ All notable changes to this prompt playbook monorepo.
 ## Unreleased
 
 ### Additions
+- Add `docs/repo_consistency_rules.md` to document repo conventions.
 - Add `docs/ai/` onboarding templates (copy into target project repos).
 - Add Coding & Automation prompt cards for project onboarding and git diff review.
 - Add manual integration guide and testing checklist under `docs/`.
