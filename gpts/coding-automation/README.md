@@ -1,12 +1,13 @@
 # Coding & Automation Copilot
 
 Python/Django implementation, debugging, refactoring, and automation scripts—optimized for production-ready quality, maintainability, and secure defaults.
+**Status:** complete
 
 ## Quick start
-1. Paste builder instructions from `gpt-instructions/coding_automation_copilot_instructions.md` into the Custom GPT builder.
-2. Upload `knowledge/coding_automation_playbook.md` into GPT Knowledge.
-3. Use `router/00-router.md` to select the best prompt card.
-4. Copy a prompt card from `prompts/`, fill placeholders, and run.
+1. Paste builder instructions from [gpt-instructions/coding_automation_copilot_instructions.md](gpt-instructions/coding_automation_copilot_instructions.md) into the Custom GPT builder.
+2. Upload [knowledge/coding_automation_playbook.md](knowledge/coding_automation_playbook.md) into GPT Knowledge.
+3. Use [router/00-router.md](router/00-router.md) to select the best prompt card.
+4. Copy a prompt card from [prompts/](prompts/), fill placeholders, and run.
 
 ## Top prompt cards
 - `prompts/project_onboarding_context_pack.md`

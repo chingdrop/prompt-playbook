@@ -128,7 +128,7 @@ Integration is manual. Treat Git as your system of record.
 
 ## 8) Testing checklist
 
-Use `docs/testing_checklist.md` after changes that affect behavior or outputs.
+Use [docs/testing_checklist.md](testing_checklist.md) after changes that affect behavior or outputs.
 
 ---
 
