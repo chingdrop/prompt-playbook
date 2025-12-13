@@ -9,6 +9,8 @@ Python/Django implementation, debugging, refactoring, and automation scripts—o
 4. Copy a prompt card from `prompts/`, fill placeholders, and run.
 
 ## Top prompt cards
+- `prompts/project_onboarding_context_pack.md`
+- `prompts/git_diff_patch_review.md`
 - `prompts/debug_triage_ranked_hypotheses.md`
 - `prompts/implement_feature_spec_to_code.md`
 - `prompts/django_project_bootstrap_best_practices.md`
