@@ -1,0 +1,125 @@
+###############################################################################
+# OS / File system noise
+###############################################################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+###############################################################################
+# Editors / IDEs
+###############################################################################
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains
+.idea/
+*.iml
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# Vim / Emacs
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+\#*\#
+.\#*
+
+###############################################################################
+# Python (safe to ignore even if you don't use Python tooling in this repo)
+###############################################################################
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+*.egg-info/
+.venv/
+venv/
+ENV/
+env/
+
+###############################################################################
+# Node / JS (safe to ignore if you add tooling later)
+###############################################################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.cache/
+
+###############################################################################
+# Logs
+###############################################################################
+*.log
+
+###############################################################################
+# Archives / exports / generated artifacts
+###############################################################################
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# If you export PDFs or DOCX from docs, keep source Markdown in git.
+# Comment these out if you DO want to version exported binaries.
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+
+###############################################################################
+# Secrets / local config
+###############################################################################
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+secrets/
+credentials/
+*.kdbx
+
+###############################################################################
+# Misc
+###############################################################################
+.DS_Store?
