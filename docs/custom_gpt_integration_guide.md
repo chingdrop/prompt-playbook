@@ -70,7 +70,7 @@ If the topic contains `knowledge/*.md`, upload those files into GPT Knowledge.
 
 Use the topic router at:
 
-- `gpts/<topic>/router/00-router.md`
+- `gpts/<topic>/router/00_router.md`
 
 Then run the selected prompt card from:
 
@@ -161,7 +161,7 @@ A topic is “complete” when it has (minimum):
 
 - A topic README with quick start and prompt card list
 - Builder instructions (`gpts/<topic>/gpt-instructions/*.md`)
-- A topic router (`gpts/<topic>/router/00-router.md`)
+- A topic router (`gpts/<topic>/router/00_router.md`)
 - At least 3 high-value prompt cards (`gpts/<topic>/prompts/*.md`)
 - At least 1 knowledge file (`gpts/<topic>/knowledge/*.md`)
 

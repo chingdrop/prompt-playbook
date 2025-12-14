@@ -8,7 +8,7 @@ Proposals, SOWs, quotes/estimates, client emails, executive summaries, and meeti
 
 1. Paste builder instructions from [`gpt-instructions/document_writing_copilot_instructions.md`](gpt-instructions/document_writing_copilot_instructions.md) into the Custom GPT Builder.
 2. Upload [`knowledge/document_writing_playbook.md`](knowledge/document_writing_playbook.md) into GPT Knowledge.
-3. Use [`router/00-router.md`](router/00-router.md) to select the right prompt card.
+3. Use [`router/00_router.md`](router/00_router.md) to select the right prompt card.
 4. Copy a prompt card from the [Prompt cards](#prompt-cards) list below (files live under `prompts/`), fill placeholders, and run.
 
 ## Prompt cards

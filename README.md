@@ -28,7 +28,7 @@ This repo is optimized for **manual Custom GPT setup** (copy/paste instructions 
 1. Open the topic you want, e.g. [`gpts/career-assets/README.md`](gpts/career-assets/README.md).
 2. Copy the builder instructions from `gpts/<topic>/gpt-instructions/<file>.md` into the Custom GPT Builder.
 3. If present, upload the topic knowledge pack(s) from `gpts/<topic>/knowledge/` into GPT Knowledge.
-4. Use `gpts/<topic>/router/00-router.md` to pick the right prompt card.
+4. Use `gpts/<topic>/router/00_router.md` to pick the right prompt card.
 5. Paste a prompt card from `gpts/<topic>/prompts/` and fill placeholders.
 
 ## Manual integration and QA

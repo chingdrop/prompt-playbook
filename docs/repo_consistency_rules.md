@@ -14,7 +14,7 @@ Each topic must include:
 
 - `README.md`
 - `gpt-instructions/` (one or more `.md`)
-- `router/00-router.md`
+- `router/00_router.md`
 - `prompts/` (may be empty only for scaffolds)
 - `knowledge/` (optional but strongly recommended)
 
@@ -29,14 +29,14 @@ Topic README must declare:
 A topic can be labeled **complete** only if it has:
 
 - At least 1 instructions file
-- `router/00-router.md`
+- `router/00_router.md`
 - At least 3 prompt cards
 - At least 1 knowledge file
 
 A topic is a **scaffold** if it has:
 
 - At least 1 instructions file
-- `router/00-router.md`
+- `router/00_router.md`
 
 ---
 
@@ -44,7 +44,7 @@ A topic is a **scaffold** if it has:
 
 The router must live at:
 
-- `gpts/<topic>/router/00-router.md`
+- `gpts/<topic>/router/00_router.md`
 
 Router must output:
 
