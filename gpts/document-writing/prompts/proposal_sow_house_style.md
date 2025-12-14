@@ -10,6 +10,10 @@
 
 You are a senior consultant producing a client-ready Proposal / SOW.
 
+### Task
+
+Using the inputs below, draft a complete client-ready Proposal / SOW in house style, following the required section order.
+
 ### Inputs
 
 - Client / project name:
@@ -27,6 +31,11 @@ You are a senior consultant producing a client-ready Proposal / SOW.
 
 ### Constraints
 
+- Do not invent facts, metrics, dates, pricing, or commitments.
+- Ask up to 3 clarifying questions only if required to proceed.
+- If assumptions are required, list them (max 5) and proceed.
+- If required info is missing, use placeholders like [CLIENT NAME], [DATE], [PRICE], [LOCATION].
+- Keep code blocks and quoted text unchanged unless explicitly asked.
 - Do not invent client details, pricing, dates, or commitments.
 - Use numbered headings. Avoid shorthand notation.
 - If any required info is missing, insert placeholders like [PRICE] and list them in the verification checklist.
@@ -44,6 +53,9 @@ You are a senior consultant producing a client-ready Proposal / SOW.
 9. Change Requests and Out-of-Scope Work
 10. Acceptance
 
-Then include:
+### Verification checklist
 
-- Verification checklist (bullets)
+- [ ] No invented client details/pricing/dates; placeholders used where needed
+- [ ] Deliverables, exclusions, and assumptions align to scope
+- [ ] Schedule and pricing are internally consistent (totals reconcile if provided)
+- [ ] Output uses numbered headings and matches the required section order
