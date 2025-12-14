@@ -1,16 +1,18 @@
 # Document Writing Copilot
 
-Proposals, SOWs, quotes, client emails, executive summaries, and meeting notes—optimized for business clarity, professional tone, and copy/paste readiness.
+Proposals, SOWs, quotes, client emails, executive summaries, and meeting notes — built for business clarity, professional tone, and copy/paste readiness.
 
 **Status:** complete
 
 ## Quick start
-1. Paste builder instructions from [`gpt-instructions/document_writing_copilot_instructions.md`](gpt-instructions/document_writing_copilot_instructions.md) into the Custom GPT builder.
+
+1. Paste builder instructions from [`gpt-instructions/document_writing_copilot_instructions.md`](gpt-instructions/document_writing_copilot_instructions.md) into the Custom GPT Builder.
 2. Upload [`knowledge/document_writing_playbook.md`](knowledge/document_writing_playbook.md) into GPT Knowledge.
 3. Use [`router/00-router.md`](router/00-router.md) to select the right prompt card.
-4. Copy a prompt card from [`prompts/`](prompts/) , fill placeholders, and run.
+4. Copy a prompt card from the [Prompt cards](#prompt-cards) list below (files live under `prompts/`), fill placeholders, and run.
 
 ## Prompt cards
+
 - [`proposal_sow_house_style.md`](prompts/proposal_sow_house_style.md)
 - [`quote_scope_pricing.md`](prompts/quote_scope_pricing.md)
 - [`executive_summary.md`](prompts/executive_summary.md)
@@ -23,6 +25,7 @@ Proposals, SOWs, quotes, client emails, executive summaries, and meeting notes�
 - [`pricing_table_itemization.md`](prompts/pricing_table_itemization.md)
 
 ## Output quality rules
+
 - Ask ≤ 3 clarifying questions only when required to proceed.
 - If uncertain, list assumptions (max 5).
 - Do not invent facts (dates, terms, pricing, client details). Request inputs.
