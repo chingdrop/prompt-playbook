@@ -67,7 +67,7 @@ If critical inputs are missing, proceed with placeholders: `[CLIENT]`, `[DATE]`,
 
 Upload the following file into GPT Knowledge:
 
-- `gpts/it_delivery/knowledge/it_delivery_playbook.md`
+- `gpts/it-delivery/knowledge/it_delivery_playbook.md`
 
 ## Safety / legal note
 
