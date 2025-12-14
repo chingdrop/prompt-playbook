@@ -52,6 +52,7 @@ Each topic MUST declare status in its `gpts/<topic>/README.md`:
   - prompt cards and/or knowledge may be missing
 
 ### Status rule
+
 Do not label a topic “complete” unless it meets the criteria above.
 
 ---
@@ -59,20 +60,24 @@ Do not label a topic “complete” unless it meets the criteria above.
 ## 3) Naming conventions
 
 ### Topic folders
+
 - Use **kebab-case**: `career-assets`, `coding-automation`, `document-writing`, etc.
 
 ### Instruction files
+
 - Prefer **snake_case** and be explicit:
   - Good: `coding_automation_copilot_instructions.md`
   - Avoid: `instructions.md` (too generic), unless there is only one topic in the repo.
 
 ### Knowledge packs
+
 - Prefer a single “knowledge pack” file when possible:
   - `knowledge/<topic>_playbook.md`
 - If multiple knowledge files are needed, keep them narrowly scoped and name them by function:
   - `knowledge/output_schemas.md`, `knowledge/domain_terms.md`
 
 ### Prompt cards
+
 - Use descriptive snake_case or ordered naming, but be consistent within the topic.
   - Ordered (good): `01_resume_tailor_ats.md`
   - Descriptive (good): `debug_triage_ranked_hypotheses.md`
@@ -81,6 +86,7 @@ Do not label a topic “complete” unless it meets the criteria above.
   - A **strict output format** when the use case benefits from structure
 
 ### Router
+
 - Router file name is always `router/00-router.md`
 - Router MUST output:
   1) chosen prompt card filename
@@ -92,7 +98,9 @@ Do not label a topic “complete” unless it meets the criteria above.
 ## 4) README standards
 
 ### Root README (`README.md`)
+
 Must include:
+
 - Purpose and scope (manual setup, no APIs)
 - Folder structure overview
 - List of topics with **accurate statuses**
@@ -103,7 +111,9 @@ Must include:
   - [docs/ai/](ai/README.md) templates
 
 ### Topic README (`gpts/<topic>/README.md`)
+
 Must include:
+
 - Title + 1–2 line description
 - `**Status:** complete|scaffold`
 - “Quick start” with correct file paths:
@@ -131,7 +141,9 @@ The repo root MUST contain `CHANGELOG.md` with:
   - `## v0.1.0`, `## v0.2.0`, etc.
 
 ### Builder sync rule
+
 If a change requires updating the Custom GPT Builder (Instructions or Knowledge uploads), the change MUST be called out explicitly in the changelog, e.g.:
+
 - “Builder sync required: update Instructions for Coding & Automation Copilot.”
 
 ---
