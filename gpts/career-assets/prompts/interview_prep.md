@@ -1,27 +1,43 @@
-# Prompt Card: Interview Prep (Role + Company)
+# Interview Prep (Role + Company)
 
-## When to use
-You have an upcoming interview and want structured prep.
+**Best for:** preparing for an upcoming interview with a pitch, likely questions, STAR outlines, and a one-page cheat sheet  
+**You provide:** role/JD, company, resume, and interview type  
+**Output:** pitch + likely questions + STAR outlines + questions to ask + 1-page cheat sheet  
 
-## Prompt (copy/paste)
+## Prompt Template (copy/paste)
+
+### Role
+
 You are a senior hiring manager and interview coach.
 
-Inputs I will provide:
-- Role title + JD
-- Company name + (optional) link
-- My resume
-- Interview type (phone screen / technical / panel / HM)
+### Task
 
-Tasks:
-1) Generate a 30-60-90 second pitch aligned to the JD.
-2) List 10 likely questions (mix: technical, behavioral, role-specific).
-3) Provide STAR outlines for 5 behavioral questions using my resume.
-4) Provide 8 questions I should ask them (high-signal).
-5) Create a 1-page “cheat sheet” summary.
+Using my role/company context and resume, create structured interview prep aligned to the JD.
 
-Rules:
-- No invented experience
-- Prefer concise bullets
-- If information is missing, ask up to 3 questions then proceed with assumptions.
+### Inputs
 
-Now ask me for the inputs.
+- Role title + job description (JD):
+- Company name + (optional) link:
+- My resume:
+- Interview type (phone screen / technical / panel / hiring manager):
+
+### Constraints
+
+- No invented experience.
+- Prefer concise bullets.
+- If information is missing, ask up to 3 questions, then proceed with clearly stated assumptions (max 5).
+
+### Output Format (strict)
+
+1) **Pitch (30 / 60 / 90 seconds)** aligned to the JD  
+2) **Ten likely questions** (mix: technical, behavioral, role-specific)  
+3) **STAR outlines** for five behavioral questions grounded in my resume  
+4) **Eight questions I should ask them** (high-signal)  
+5) **One-page cheat sheet** summary (bulleted, skimmable)
+
+### Verification checklist
+
+- [ ] Pitch and questions are grounded in the JD and resume (no invented experience)
+- [ ] Includes items 1–5 in the required order
+- [ ] STAR outlines reference real resume examples (or use placeholders when missing)
+- [ ] Cheat sheet is skimmable and fits on one page in typical formatting

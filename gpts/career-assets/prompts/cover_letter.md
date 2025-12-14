@@ -1,27 +1,49 @@
-# Prompt Card: Cover Letter (Short, High-Signal)
+# Cover Letter (Short, High-Signal)
 
-## When to use
-You have a JD and want a tailored cover letter that does not repeat the resume.
+**Best for:** writing a tailored cover letter that maps to a JD without repeating the resume  
+**You provide:** JD, resume, company name/role title, and any constraints (tone/word count)  
+**Output:** final cover letter + mapping bullets (JD → proof point)  
 
-## Prompt (copy/paste)
+## Prompt Template (copy/paste)
+
+### Role
+
 You are an expert hiring manager and career writer.
 
-Write a tailored cover letter for this role.
+### Task
 
-Inputs:
-- Job description
-- My resume
-- Company name + role title
-- Any constraints (word count, tone)
+Write a tailored cover letter for this role, using the provided JD and my resume, without repeating the resume content.
 
-Rules:
-- 250–350 words unless otherwise requested
-- 2–3 specific “proof points” mapped to the JD
-- No generic fluff; no invented experience
-- End with a clear CTA (interview request)
+### Inputs
 
-Output:
-- Final cover letter
-- 5 bullets explaining the mapping (JD → proof point)
+- Job description (JD):
+- My resume:
+- Company name:
+- Role title:
+- Any constraints (word count, tone):
 
-Now ask me for the inputs.
+### Constraints
+
+- 250–350 words unless otherwise requested.
+- Include 2–3 specific proof points mapped to the JD.
+- No generic fluff; no invented experience.
+- End with a clear CTA (request an interview / next step).
+
+### Output Format (strict)
+
+**Final cover letter** (250–350 words unless otherwise requested)
+
+**Mapping (JD → proof point)**  
+
+- Bullet 1: ...
+- Bullet 2: ...
+- Bullet 3: ...
+- Bullet 4: ...
+- Bullet 5: ...
+
+### Verification checklist
+
+- [ ] No invented experience; all proof points are grounded in the resume
+- [ ] Word count is within the requested range (or explicitly called out if not)
+- [ ] Includes 2–3 specific proof points mapped to the JD
+- [ ] Ends with a clear CTA

@@ -1,45 +1,47 @@
-# Prompt Card: Resume Tailoring (ATS-safe, Truthful)
+# Resume Tailoring (ATS-safe, Truthful)
 
-## When to use
-You have a job description (JD) and an existing resume, and you want a tailored, ATS-friendly version.
+**Best for:** tailoring an existing resume to a specific job description (JD) while staying fully truthful and ATS-friendly  
+**You provide:** the JD and your current resume (paste text or upload)  
+**Output:** keyword map + tailored resume + change log + gap list (in a fixed order)  
 
-## Prompt (copy/paste)
+## Prompt Template (copy/paste)
+
+### Role
+
 You are an experienced hiring assistant and ATS optimization expert.
 
-I will provide:
-1) A job description (JD)
-2) My current resume
+### Task
 
-Your task:
-Tailor my resume to match the JD as closely as possible while staying fully truthful.
+Tailor my resume to match the job description (JD) as closely as possible while staying fully truthful.
 
-Rules:
-1) Extract relevant keywords from the JD:
-- Job title(s) and seniority
-- Required skills
-- Preferred skills
-- Responsibilities
-- Tools/technologies
-- Soft skills
-- Domain keywords / industry terms
-2) Compare JD vs resume. For each relevant keyword:
-- If it already exists → rewrite & emphasize it (move higher if needed)
-- If it exists but weak → strengthen and add impact
-- If it’s missing but I have similar experience → add a truthful line that maps to my real experience
-- If it’s missing and cannot be supported → DO NOT add it; list it as a gap
-3) Reorganize for relevance:
-- Most relevant experience first
-- Add a tailored Professional Summary using JD language (not copied verbatim)
-- Strengthen achievements with measurable impact where possible (or add placeholders for me to confirm)
-4) Keep formatting ATS-friendly:
-- No icons, tables, images, columns
-- Standard section headings
-- Consistent bullet formatting
-5) Output must include (in this order):
-A) Keyword Map (JD keywords grouped by category)
-B) Tailored Resume (one-page default unless my resume already warrants two)
-C) Change Log (what you changed and why)
-D) Gap List (keywords I should add via skills/projects or learn)
+### Inputs
 
-Now ask me:
-“Please paste the job description and the resume (or upload the resume file).”
+- Job description (JD):
+- Current resume:
+- Optional: target length preference (one page vs two pages):
+
+### Constraints
+
+- Do not invent experience, titles, employers, tools, or achievements.
+- If metrics/impact would help but are missing, add placeholders like `[METRIC?]` for me to confirm.
+- Add a tailored Professional Summary using JD language (not copied verbatim).
+- Keep formatting ATS-friendly:
+  - No icons, tables, images, columns
+  - Standard section headings
+  - Consistent bullet formatting
+- TODO: The prior version included an ellipsis under “Rules”. Add any additional tailoring rules you want enforced.
+- If inputs are missing, ask me to paste the JD and the resume (or upload the resume file).
+
+### Output Format (strict)
+
+A) **Keyword Map** (JD keywords grouped by category)  
+B) **Tailored Resume** (one-page default unless my resume already warrants two)  
+C) **Change Log** (what you changed and why)  
+D) **Gap List** (keywords I should add via skills/projects or learn)
+
+### Verification checklist
+
+- [ ] No invented experience or achievements; placeholders used for missing metrics
+- [ ] Resume formatting is ATS-friendly (no tables/columns/images)
+- [ ] Output includes A–D sections in the required order
+- [ ] Change Log explains material edits; Gap List is actionable
