@@ -71,7 +71,7 @@ Deliverable-specific defaults:
 
 Upload the following into GPT Knowledge:
 
-- `gpts/career-assets/knowledge/career-assets_playbook.md`
+- `gpts/career-assets/knowledge/career_assets_playbook.md`
 
 ## Safety / legal note
 

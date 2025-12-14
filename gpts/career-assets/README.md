@@ -5,21 +5,21 @@ Resumes, LinkedIn, outreach, project case studies, interview prep, and offer neg
 
 ## Quick start
 
-1. Paste builder instructions from [gpt-instructions/career-assets_instructions.md](gpt-instructions/career_assets_instructions.md) into the Custom GPT builder.
-2. Upload [knowledge/career_assets_playbook.md](knowledge/career_assets_playbook.md) into GPT Knowledge.
-3. Use [router/00_router.md](router/00_router.md) to select the right prompt card.
-4. Copy a prompt card from [prompts/](prompts/), fill placeholders, and run.
+1. Paste builder instructions from [`gpt-instructions/career_assets_instructions.md`](gpt-instructions/career_assets_instructions.md) into the Custom GPT Builder.
+2. Upload [`knowledge/career_assets_playbook.md`](knowledge/career_assets_playbook.md) into GPT Knowledge.
+3. Use [`router/00_router.md`](router/00_router.md) to select the right prompt card.
+4. Copy a prompt card from [`prompts/`](prompts/), fill placeholders, and run.
 
 ## Prompt cards
 
-- `resume_tailor_ats.md` — Tailor resume to a JD (ATS-safe, truthful)
-- `resume_rewrite_baseline.md` — Baseline resume rewrite for a target role family
-- `linkedin_about.md` — LinkedIn headline + About (A/B versions)
-- `cover_letter.md` — Short cover letter mapped to the JD
-- `outreach_email_hiring_manager.md` — Personalized hiring manager email
-- `recruiter_agency_pitch.md` — Recruiter/agency pitch email + connection note
-- `interview_prep.md` — Structured interview prep + cheat sheet
-- `offer_comparison_negotiation.md` — Offer comparison + negotiation templates
+- [`resume_tailor_ats.md`](prompts/resume_tailor_ats.md) — Tailor resume to a JD (ATS-safe, truthful)
+- [`resume_rewrite_baseline.md`](prompts/resume_rewrite_baseline.md) — Baseline resume rewrite for a target role family
+- [`linkedin_about.md`](prompts/linkedin_about.md) — LinkedIn headline + About (A/B versions)
+- [`cover_letter.md`](prompts/cover_letter.md) — Short cover letter mapped to the JD
+- [`outreach_email_hiring_manager.md`](prompts/outreach_email_hiring_manager.md) — Personalized hiring manager email
+- [`recruiter_agency_pitch.md`](prompts/recruiter_agency_pitch.md) — Recruiter/agency pitch email + connection note
+- [`interview_prep.md`](prompts/interview_prep.md) — Structured interview prep + cheat sheet
+- [`offer_comparison_negotiation.md`](prompts/offer_comparison_negotiation.md) — Offer comparison + negotiation templates
 
 ## Output quality rules
 

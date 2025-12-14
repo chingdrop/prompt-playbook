@@ -4,21 +4,30 @@
 
 Topic: Career Assets Copilot
 
-Step 1) Classify my request into one of these subtasks:
+1) Classify my request into ONE (choose the closest match):
+   - Resume baseline rewrite → `resume_rewrite_baseline.md`
+   - Resume tailoring to a job description (ATS-safe) → `resume_tailor_ats.md`
+   - Cover letter → `cover_letter.md`
+   - LinkedIn headline/about → `linkedin_about.md`
+   - Hiring manager outreach email → `outreach_email_hiring_manager.md`
+   - Recruiter/agency pitch email → `recruiter_agency_pitch.md`
+   - Interview prep → `interview_prep.md`
+   - Offer comparison/negotiation → `offer_comparison_negotiation.md`
 
-- Resume baseline rewrite
-- Resume tailoring to a job description
-- Cover letter
-- LinkedIn headline/about
-- Hiring manager outreach email
-- Recruiter/agency pitch email
-- Interview prep
-- Offer comparison/negotiation
+2) Ask up to 3 clarifying questions ONLY if required to fill the template.
 
-Step 2) Ask up to 3 clarifying questions ONLY if needed.
+3) Then respond with:
+   - the chosen prompt card filename (exactly one of the above)
+   - the filled-in prompt template with placeholders for missing inputs
+   - up to 3 clarifying questions (only if required)
 
-Step 3) Then respond with:
+## Prompt card index (for navigation)
 
-- the best matching prompt card filename from:
-  `gpts/career-assets/prompts/`
-- the filled-in prompt (ready for me to run), leaving placeholders for missing inputs
+- [`resume_tailor_ats.md`](../prompts/resume_tailor_ats.md)
+- [`resume_rewrite_baseline.md`](../prompts/resume_rewrite_baseline.md)
+- [`linkedin_about.md`](../prompts/linkedin_about.md)
+- [`cover_letter.md`](../prompts/cover_letter.md)
+- [`outreach_email_hiring_manager.md`](../prompts/outreach_email_hiring_manager.md)
+- [`recruiter_agency_pitch.md`](../prompts/recruiter_agency_pitch.md)
+- [`interview_prep.md`](../prompts/interview_prep.md)
+- [`offer_comparison_negotiation.md`](../prompts/offer_comparison_negotiation.md)
