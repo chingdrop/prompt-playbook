@@ -66,3 +66,8 @@ Every prompt card MUST include these sections in this order:
 
 ## Notes (optional)
 - <tips, variants, examples>
+
+## Link rules for prompt cards
+
+- Real internal refs become links: [`docs/testing_checklist.md`](docs/testing_checklist.md)
+- Placeholders stay inline code: `gpts/<topic>/...`
