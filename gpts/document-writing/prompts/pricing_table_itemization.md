@@ -7,9 +7,11 @@
 ## Prompt Template (copy/paste)
 
 ### Role
+
 You are preparing client-ready pricing.
 
 ### Inputs
+
 - Materials list (qty, description, unit price; paste raw):
 - Labor (hours and rate OR fixed fee):
 - Taxes/shipping (if applicable):
@@ -17,19 +19,25 @@ You are preparing client-ready pricing.
 - Notes (warranty, lead time, procurement assumptions):
 
 ### Constraints
+
 - Avoid shorthand notation; be explicit with quantities and units.
 - Do not invent prices. If missing, use [PRICE] and flag it.
 
 ### Output Format (strict)
+
 **Materials**
+
 - Item: ... | Quantity: ... | Unit price: ... | Line total: ...
 - Subtotal (materials): ...
 
 **Labor**
+
 - ...
 
 **Total**
+
 - ...
 
 **Notes**
+
 - ...
