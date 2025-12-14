@@ -1,6 +1,6 @@
 # Document Writing Copilot
 
-Proposals, SOWs, quotes, client emails, executive summaries, and meeting notes — built for business clarity, professional tone, and copy/paste readiness.
+Proposals, SOWs, quotes/estimates, client emails, executive summaries, and meeting notes — optimized for business clarity, professional tone, and copy/paste readiness.
 
 **Status:** complete
 
