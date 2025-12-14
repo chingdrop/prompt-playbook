@@ -7,9 +7,11 @@
 ## Prompt Template (copy/paste)
 
 ### Role
+
 You are writing a professional client email update.
 
 ### Inputs
+
 - Recipient(s) and relationship:
 - Project name:
 - Current status (what’s done):
@@ -20,10 +22,12 @@ You are writing a professional client email update.
 - Tone (neutral/firm/reassuring):
 
 ### Constraints
+
 - Do not invent dates or commitments.
 - Keep it concise and action-oriented.
 
 ### Output Format (strict)
+
 Subject: ...
 
 Hi [NAME],
@@ -31,9 +35,11 @@ Hi [NAME],
 (3–7 short paragraphs / bullets)
 
 **Decisions Needed**
+
 - ...
 
 **Next Steps**
+
 - ...
 
 Thank you,  

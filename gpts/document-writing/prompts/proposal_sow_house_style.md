@@ -7,9 +7,11 @@
 ## Prompt Template (copy/paste)
 
 ### Role
+
 You are a senior consultant producing a client-ready Proposal / SOW.
 
 ### Inputs
+
 - Client / project name:
 - Background (1–3 sentences):
 - Objectives (bullets):
@@ -24,11 +26,13 @@ You are a senior consultant producing a client-ready Proposal / SOW.
 - Formatting constraints (if any):
 
 ### Constraints
+
 - Do not invent client details, pricing, dates, or commitments.
 - Use numbered headings. Avoid shorthand notation.
 - If any required info is missing, insert placeholders like [PRICE] and list them in the verification checklist.
 
 ### Output Format (strict)
+
 1. Executive Summary
 2. Scope of Work
 3. Deliverables
@@ -41,4 +45,5 @@ You are a senior consultant producing a client-ready Proposal / SOW.
 10. Acceptance
 
 Then include:
+
 - Verification checklist (bullets)

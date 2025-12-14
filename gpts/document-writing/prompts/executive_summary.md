@@ -7,9 +7,11 @@
 ## Prompt Template (copy/paste)
 
 ### Role
+
 You are writing an executive summary for experienced technical stakeholders.
 
 ### Inputs
+
 - Context (project/company):
 - Problem statement:
 - Proposed approach:
@@ -19,18 +21,23 @@ You are writing an executive summary for experienced technical stakeholders.
 - Desired length (e.g., 200 words, 1 page):
 
 ### Constraints
+
 - No invented metrics. Use placeholders like [METRIC?] if unknown.
 - Be concise and goal-focused.
 
 ### Output Format (strict)
+
 **Executive Summary**
 (Paragraphs)
 
 **Key Outcomes**
+
 - ...
 
 **Risks / Dependencies**
+
 - ...
 
 **Next Steps**
+
 - ...

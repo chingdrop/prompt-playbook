@@ -7,9 +7,11 @@
 ## Prompt Template (copy/paste)
 
 ### Role
+
 You are a program manager producing meeting minutes.
 
 ### Inputs
+
 - Meeting title:
 - Date/time:
 - Attendees:
@@ -18,19 +20,25 @@ You are a program manager producing meeting minutes.
 - Action items discussed (if any):
 
 ### Constraints
+
 - If owners/dates are missing, use placeholders like [OWNER] and [DUE DATE].
 
 ### Output Format (strict)
+
 **Summary**
+
 - ...
 
 **Decisions**
+
 - ...
 
 **Discussion Notes**
+
 - ...
 
 **Action Items**
+
 | Action | Owner | Due Date | Notes |
 |---|---|---|---|
 | ... | ... | ... | ... |
