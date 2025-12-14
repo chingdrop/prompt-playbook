@@ -6,22 +6,22 @@ This repo is optimized for **manual Custom GPT setup** (copy/paste instructions 
 
 ## Structure
 
-- [`shared/`](shared/) – reusable snippets/templates/routers across topics
+- `shared/` – reusable snippets/templates/routers across topics
 - `gpts/<topic>/` – each topic contains:
   - `gpt-instructions/` – builder instructions for that Custom GPT
   - `knowledge/` – optional knowledge pack(s) to upload into GPT Knowledge
   - `prompts/` – copy/paste prompt cards
   - `router/` – topic router prompt
   - `README.md` – topic quick start + top prompt cards
-- [`docs/`](docs/) – setup guides, testing checklists, and project onboarding templates
+- `docs/` – setup guides, testing checklists, and project onboarding templates
 
 ## Topics included
 
-- [career-assets](gpts/career-assets/README.md) — **complete** (instructions + knowledge + prompt cards)
-- [coding-automation](gpts/coding-automation/README.md) — **complete** (instructions + knowledge + prompt cards)
-- [business-analysis](gpts/business-analysis/README.md) — **scaffold** (instructions + router; prompt cards pending)
-- [document-writing](gpts/document-writing/README.md) — **scaffold** (instructions + router; prompt cards pending)
-- [it-delivery](gpts/it-delivery/README.md) — **scaffold** (instructions + router; prompt cards pending)
+- [`gpts/career-assets/README.md`](gpts/career-assets/README.md) — **complete** (instructions + knowledge + prompt cards)
+- [`gpts/coding-automation/README.md`](gpts/coding-automation/README.md) — **complete** (instructions + knowledge + prompt cards)
+- [`gpts/business-analysis/README.md`](gpts/business-analysis/README.md) — **scaffold** (instructions + router; prompt cards pending)
+- [`gpts/document-writing/README.md`](gpts/document-writing/README.md) — **scaffold** (instructions + router; prompt cards pending)
+- [`gpts/it-delivery/README.md`](gpts/it-delivery/README.md) — **scaffold** (instructions + router; prompt cards pending)
 
 ## Quick start
 
@@ -41,9 +41,10 @@ This repo is optimized for **manual Custom GPT setup** (copy/paste instructions 
 
 To make the **Coding & Automation Copilot** effective on a real GitHub project, copy these into the *target project repo*:
 
-- [docs/ai templates](docs/ai/README.md) ([context](docs/ai/context.md), [how we work](docs/ai/how_we_work.md), [decision log](docs/ai/decision_log.md))
+- [`docs/ai/README.md`](docs/ai/README.md) (templates: [`docs/ai/context.md`](docs/ai/context.md), [`docs/ai/how_we_work.md`](docs/ai/how_we_work.md), [`docs/ai/decision_log.md`](docs/ai/decision_log.md))
 
 Updated: 2025-12-13
 
 ## Obsidian
+
 - [`docs/obsidian_notes.md`](docs/obsidian_notes.md)

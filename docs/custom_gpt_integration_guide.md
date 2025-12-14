@@ -42,10 +42,13 @@ Out of scope:
 
 Pick one:
 
-- [`gpts/career-assets/`](../gpts/career-assets/)
-- [`gpts/coding-automation/`](../gpts/coding-automation/)
-- [`gpts/document-writing/`](../gpts/document-writing/)
-- (scaffolds): [`gpts/business-analysis/`](../gpts/business-analysis/), [`gpts/it-delivery/`](../gpts/it-delivery/)
+- **Complete topics**
+  - [`gpts/career-assets/README.md`](../gpts/career-assets/README.md)
+  - [`gpts/coding-automation/README.md`](../gpts/coding-automation/README.md)
+  - [`gpts/document-writing/README.md`](../gpts/document-writing/README.md)
+- **Scaffolds**
+  - [`gpts/business-analysis/README.md`](../gpts/business-analysis/README.md)
+  - [`gpts/it-delivery/README.md`](../gpts/it-delivery/README.md)
 
 Open the topic README first:
 
@@ -134,7 +137,7 @@ When using the Coding & Automation Copilot on a real repo, context quality deter
 
 Recommended approach:
 
-1. Copy [`docs/ai/`](ai/) into the target project repo as [`docs/ai/`](ai/)
+1. Copy the templates under [`docs/ai/README.md`](ai/README.md) into the target project repo as `docs/ai/`.
 2. Fill [`docs/ai/context.md`](ai/context.md)
 3. Use the “Project onboarding” prompt card to build a repo mental model
 4. Work via diffs + logs + small deltas rather than uploading the whole repo repeatedly
@@ -217,7 +220,7 @@ Use [`docs/testing_checklist.md`](testing_checklist.md):
 Create a new topic folder when:
 
 - You have distinct “jobs to be done” that require different outputs and constraints
-- The instructions are starting to conflict (e.g., coding vs proposal writing)
+- The instructions are starting to conflict (e.g. coding vs proposal writing)
 - The prompt library has grown beyond ~10–15 core prompt cards
 
 ---

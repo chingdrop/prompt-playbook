@@ -105,10 +105,10 @@ Must include:
 - Folder structure overview
 - List of topics with **accurate statuses**
 - Links to:
-  - [docs/custom_gpt_integration_guide.md](custom_gpt_integration_guide.md)
-  - [docs/testing_checklist.md](testing_checklist.md)
-  - [docs/repo_consistency_rules.md](repo_consistency_rules.md)
-  - [docs/ai/](ai/README.md) templates
+  - [`docs/custom_gpt_integration_guide.md`](custom_gpt_integration_guide.md)
+  - [`docs/testing_checklist.md`](testing_checklist.md)
+  - [`docs/repo_consistency_rules.md`](repo_consistency_rules.md)
+  - [`docs/ai/README.md`](ai/README.md) templates
 
 ### Topic README (`gpts/<topic>/README.md`)
 
@@ -166,7 +166,7 @@ Before merging changes to any topic:
 - [ ] Prompt cards are copy/paste-ready and have strict output formats where appropriate
 - [ ] Topic README paths are correct
 - [ ] Topic status is accurate (complete vs scaffold)
-- [ ] [docs/testing_checklist.md](testing_checklist.md) passes for that topic
+- [ ] [`docs/testing_checklist.md`](testing_checklist.md) passes for that topic
 - [ ] CHANGELOG updated (and flags Builder sync if required)
 
 ---
@@ -176,5 +176,5 @@ Before merging changes to any topic:
 These are optional but strongly recommended:
 
 - Add a `.gitignore` (cross-platform)
-- Add [docs/testing_checklist.md](testing_checklist.md) and use it after instruction/knowledge updates
+- Add [`docs/testing_checklist.md`](testing_checklist.md) and use it after instruction/knowledge updates
 - Tag releases (`v0.1.0`, etc.) when behavior changes materially
