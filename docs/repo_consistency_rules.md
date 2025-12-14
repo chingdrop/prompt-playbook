@@ -97,7 +97,7 @@ Must include:
 
 Every prompt card must follow the canonical schema in:
 
-- [`shared/prompt-card-schema.md`](../shared/prompt-card-schema.md)
+- [`shared/prompt_card_schema.md`](../shared/prompt_card_schema.md)
 
 Do not create alternate schemas.
 
