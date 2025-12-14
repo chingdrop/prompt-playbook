@@ -1,28 +1,36 @@
-# IT Delivery & Troubleshooting Copilot
+# IT Delivery Copilot
 
-Windows/M365/Entra/networking diagnostics and delivery plans.
+Incident triage and diagnostics (Windows, M365/Entra, networking), change planning with rollback, implementation runbooks, post-incident reports (PIR), and client-facing status updates — technical but readable.
 
-**Status:** scaffold
+**Status:** complete
 
 ## Quick start
 
-1. Paste builder instructions from [gpt-instructions/it-delivery_instructions.md](gpt-instructions/it-delivery_instructions.md) into the Custom GPT builder.
-2. Use [router/00_router.md](router/00_router.md) to select the right prompt card.
-3. Copy a prompt card from [prompts/](prompts/), fill placeholders, and run.
+1. Paste builder instructions from [`gpt-instructions/it_delivery_copilot_instructions.md`](gpt-instructions/it_delivery_copilot_instructions.md) into the Custom GPT Builder.
+2. Upload [`knowledge/it_delivery_playbook.md`](knowledge/it_delivery_playbook.md) into GPT Knowledge.
+3. Use [`router/00-router.md`](router/00-router.md) to select the right prompt card.
+4. Copy a prompt card from the [Prompt cards](#prompt-cards) list below (files live under `prompts/`), fill placeholders, and run.
 
 ## Prompt cards
 
-- (Recommended) `incident_triage_runbook.md`
-- (Recommended) `change_plan_with_rollback.md`
-- (Recommended) `m365_tenant_hardening_checklist.md`
-- (Recommended) `network_diagnostics_playbook.md`
-- (Recommended) `post_incident_report.md`
+- [`incident_triage_diagnostics.md`](prompts/incident_triage_diagnostics.md)
+- [`change_plan_with_rollback.md`](prompts/change_plan_with_rollback.md)
+- [`implementation_runbook.md`](prompts/implementation_runbook.md)
+- [`post_incident_report_pir.md`](prompts/post_incident_report_pir.md)
+- [`client_status_update.md`](prompts/client_status_update.md)
+- [`network_connectivity_triage.md`](prompts/network_connectivity_triage.md)
 
-Status: scaffold — prompt cards are not yet included in this repo for this topic.
+## Planned prompt cards (create next)
+
+- `windows_endpoint_triage.md`
+- `m365_entra_issue_triage.md`
+- `service_health_incident_assessment.md`
+- `maintenance_window_checklist.md`
 
 ## Output quality rules
 
 - Ask ≤ 3 clarifying questions only when required to proceed.
-- If uncertain, list assumptions (max 5).
-- Do not invent facts, logs, or metrics. Request inputs.
-- Always include a verification plan (tests, checklist, or acceptance criteria).
+- If uncertain, list assumptions (max 5) and the next data needed.
+- Do not invent facts (configs, settings, event IDs, tenant state, timelines). Request logs and exact evidence.
+- Always include verification steps and stop conditions when troubleshooting.
+- For changes: always include rollback and acceptance criteria.
