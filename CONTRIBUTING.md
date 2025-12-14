@@ -4,7 +4,7 @@
 
 - Prompts must be copy/paste-ready.
 - Use the root schema in [`prompt-card-schema.md`](prompt-card-schema.md) (do not introduce alternate schemas).
-- Include a **strict output format**.
+- Include an **Output Format** section (use a strict format when the use case benefits from structure).
 - Include a **verification checklist** (quality gates).
 - Ask for only the minimum required inputs.
 

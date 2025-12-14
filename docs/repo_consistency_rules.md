@@ -1,97 +1,56 @@
 # Repo Consistency Rules
 
-This repo is a **prompt-playbook monorepo** for manual Custom GPT setup. These rules keep the repo predictable so the builder workflow remains low-friction and topics do not drift.
-
-Updated: 2025-12-13
+This file defines repo-wide conventions to keep all topics consistent and maintainable.
 
 ---
 
-## 1) Folder contract (non-negotiable)
+## 1) Folder contract per topic
 
-Every topic under `gpts/<topic>/` MUST include:
+Every topic folder must exist under:
+
+- `gpts/<topic>/`
+
+Each topic must include:
 
 - `README.md`
-- `gpt-instructions/` (at least one `.md`)
+- `gpt-instructions/` (one or more `.md`)
 - `router/00-router.md`
 - `prompts/` (may be empty only for scaffolds)
-- `knowledge/` (optional; recommended for complete topics)
-
-### Required structure
-
-```text
-prompt-playbook/
-  README.md
-  CHANGELOG.md
-  docs/
-  shared/
-  gpts/
-    <topic>/
-      README.md
-      gpt-instructions/
-      router/
-        00-router.md
-      prompts/
-      knowledge/
-```
+- `knowledge/` (optional but strongly recommended)
 
 ---
 
-## 2) Topic status definitions
+## 2) Status truth rules
 
-Each topic MUST declare status in its `gpts/<topic>/README.md`:
+Topic README must declare:
 
-- **complete**: has at least:
-  - 1 instruction file under `gpt-instructions/`
-  - `router/00-router.md`
-  - ≥ 3 prompt cards under `prompts/`
-  - ≥ 1 knowledge file under `knowledge/` (strongly recommended; required for “complete” label)
+- `**Status:** complete|scaffold`
 
-- **scaffold**: has:
-  - at least 1 instruction file
-  - router exists
-  - prompt cards and/or knowledge may be missing
+A topic can be labeled **complete** only if it has:
 
-### Status rule
+- At least 1 instructions file
+- `router/00-router.md`
+- At least 3 prompt cards
+- At least 1 knowledge file
 
-Do not label a topic “complete” unless it meets the criteria above.
+A topic is a **scaffold** if it has:
+
+- At least 1 instructions file
+- `router/00-router.md`
 
 ---
 
-## 3) Naming conventions
+## 3) Router contract
 
-### Topic folders
+The router must live at:
 
-- Use **kebab-case**: `career-assets`, `coding-automation`, `document-writing`, etc.
+- `gpts/<topic>/router/00-router.md`
 
-### Instruction files
+Router must output:
 
-- Prefer **snake_case** and be explicit:
-  - Good: `coding_automation_copilot_instructions.md`
-  - Avoid: `instructions.md` (too generic), unless there is only one topic in the repo.
-
-### Knowledge packs
-
-- Prefer a single “knowledge pack” file when possible:
-  - `knowledge/<topic>_playbook.md`
-- If multiple knowledge files are needed, keep them narrowly scoped and name them by function:
-  - `knowledge/output_schemas.md`, `knowledge/domain_terms.md`
-
-### Prompt cards
-
-- Use descriptive snake_case or ordered naming, but be consistent within the topic.
-  - Ordered (good): `01_resume_tailor_ats.md`
-  - Descriptive (good): `debug_triage_ranked_hypotheses.md`
-- Each prompt card MUST contain:
-  - “Best for”, “You provide”, and a **copy/paste prompt template**
-  - A **strict output format** when the use case benefits from structure
-
-### Router
-
-- Router file name is always `router/00-router.md`
-- Router MUST output:
-  1) chosen prompt card filename
-  2) a filled-in prompt template (placeholders for missing inputs)
-  3) up to 3 clarifying questions (only if required)
+1) the chosen prompt card filename  
+2) a filled-in prompt template (placeholders allowed)  
+3) up to 3 clarifying questions only if required  
 
 ---
 
@@ -110,6 +69,13 @@ Must include:
   - [`docs/repo_consistency_rules.md`](repo_consistency_rules.md)
   - [`docs/ai/README.md`](ai/README.md) templates
 
+Copy/paste targets for the root `README.md` (note the `docs/` prefix):
+
+- `docs/custom_gpt_integration_guide.md`
+- `docs/testing_checklist.md`
+- `docs/repo_consistency_rules.md`
+- `docs/ai/README.md`
+
 ### Topic README (`gpts/<topic>/README.md`)
 
 Must include:
@@ -122,59 +88,69 @@ Must include:
   - router path
   - prompt cards path
 - “Prompt cards” section:
-  - for complete topics: list the top 6–12 prompt cards
-  - for scaffolds: list “recommended prompt cards to add next”
-- “Output quality rules” section
+  - for complete topics: list at least 3 cards
+  - for scaffold topics: list “TBD” or a placeholder
 
 ---
 
-## 5) CHANGELOG rules
+## 5) Prompt card schema contract
 
-The repo root MUST contain `CHANGELOG.md` with:
+Every prompt card must follow the canonical schema in:
 
-- An **Unreleased** section containing:
-  - `### Additions`
-  - `### Changes`
-  - `### Fixes`
+- [`shared/prompt-card-schema.md`](../shared/prompt-card-schema.md)
 
-- Release sections named like:
-  - `## v0.1.0`, `## v0.2.0`, etc.
+Do not create alternate schemas.
 
-### Builder sync rule
+Prompt cards must be copy/paste-ready and include:
 
-If a change requires updating the Custom GPT Builder (Instructions or Knowledge uploads), the change MUST be called out explicitly in the changelog, e.g.:
+- a clear “You provide” section
+- a clear “Output” section
+- a prompt template with:
+  - Role
+  - Task
+  - Inputs
+  - Constraints
+  - Output Format (strict)
+  - Verification checklist
 
-- “Builder sync required: update Instructions for Coding & Automation Copilot.”
-
----
-
-## 6) Deprecation policy
-
-Do not delete old instruction files abruptly. If you must replace an instruction file:
-
-- Keep the old file
-- Add a **DEPRECATED** header at the top
-- Point to the canonical replacement file
+Use strict output formats when the use case benefits from structure.
 
 ---
 
-## 7) Quality gates before merging changes
+## 6) Maintenance hygiene rules
 
-Before merging changes to any topic:
+### Changelog
 
-- [ ] Router selects an existing prompt card file
-- [ ] Prompt cards are copy/paste-ready and have strict output formats where appropriate
-- [ ] Topic README paths are correct
-- [ ] Topic status is accurate (complete vs scaffold)
-- [ ] [`docs/testing_checklist.md`](testing_checklist.md) passes for that topic
-- [ ] CHANGELOG updated (and flags Builder sync if required)
+Repo must include `CHANGELOG.md` with:
+
+- `## Unreleased`
+- `### Additions`
+- `### Changes`
+- `### Fixes`
+- versioned releases (e.g., `## v0.1.0`)
+
+If Builder needs updating, changelog must explicitly include:
+
+- “Builder sync required: …”
+
+### Deprecation policy
+
+Do not delete replaced instruction files.
+
+If a file is replaced:
+
+- Add `# DEPRECATED` at the top
+- Point to the canonical replacement file path
 
 ---
 
-## 8) Recommended repo hygiene (optional)
+## 7) Quality gates before merging
 
-These are optional but strongly recommended:
+Before merging changes:
 
-- Add a `.gitignore` (cross-platform)
-- Add [`docs/testing_checklist.md`](testing_checklist.md) and use it after instruction/knowledge updates
-- Tag releases (`v0.1.0`, etc.) when behavior changes materially
+- Router selects an existing prompt card
+- Prompt cards are copy/paste-ready
+- README paths are correct
+- Status is accurate
+- Testing checklist passes
+- Changelog updated (and flags Builder sync when required)

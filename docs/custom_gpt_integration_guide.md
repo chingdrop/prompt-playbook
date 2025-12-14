@@ -40,182 +40,110 @@ Out of scope:
 
 ### Step A — Choose a topic
 
-Pick one:
+Use the topic index in the root README for the current, authoritative status (complete vs scaffold):
 
-- **Complete topics**
-  - [`gpts/career-assets/README.md`](../gpts/career-assets/README.md)
-  - [`gpts/coding-automation/README.md`](../gpts/coding-automation/README.md)
-  - [`gpts/document-writing/README.md`](../gpts/document-writing/README.md)
-- **Scaffolds**
-  - [`gpts/business-analysis/README.md`](../gpts/business-analysis/README.md)
-  - [`gpts/it-delivery/README.md`](../gpts/it-delivery/README.md)
+- [`README.md`](../README.md)
 
-Open the topic README first:
+Then open the matching topic README:
 
-- `gpts/<topic>/README.md`
+- [`gpts/career-assets/README.md`](../gpts/career-assets/README.md)
+- [`gpts/coding-automation/README.md`](../gpts/coding-automation/README.md)
+- [`gpts/document-writing/README.md`](../gpts/document-writing/README.md)
+- [`gpts/business-analysis/README.md`](../gpts/business-analysis/README.md)
+- [`gpts/it-delivery/README.md`](../gpts/it-delivery/README.md)
 
-### Step B — Create the Custom GPT
+If you are not sure which topic to use, run the global router prompt in:
 
-In ChatGPT:
+- [`00_router.md`](../00_router.md)
 
-1. Go to **Explore GPTs**
-2. Click **Create**
-3. Switch to **Configure** (recommended for control)
+### Step B — Paste builder instructions
 
-Set:
+Open the topic instructions file under `gpts/<topic>/gpt-instructions/`.
 
-- Name: match the topic (e.g., “Coding & Automation Copilot”)
-- Description: 1–2 lines, specific to that topic
-- Conversation starters: pull from your most common tasks
+Copy/paste the full instructions file into the Custom GPT Builder “Instructions” field.
 
-### Step C — Paste builder instructions
+### Step C — Upload knowledge pack(s)
 
-Copy the contents of:
+If the topic contains `knowledge/*.md`, upload those files into GPT Knowledge.
 
-- `gpts/<topic>/gpt-instructions/<file>.md`
+### Step D — Use the topic router + prompt cards
 
-Paste into the Builder’s **Instructions** field.
+Use the topic router at:
 
-### Step D — Upload knowledge packs
+- `gpts/<topic>/router/00-router.md`
 
-If the topic has knowledge files, upload:
+Then run the selected prompt card from:
 
+- `gpts/<topic>/prompts/*.md`
+
+---
+
+## 3) When to sync the Builder
+
+Sync the Custom GPT Builder whenever you change:
+
+- `gpts/<topic>/gpt-instructions/*.md`
 - `gpts/<topic>/knowledge/*.md`
 
-Guidance:
-
-- Prefer one “knowledge pack” file when possible
-- If multiple files, keep them narrow and additive
-
-### Step E — Enable capabilities (recommended defaults)
-
-Turn ON:
-
-- File uploads / Advanced Data Analysis (for logs, docs, CSVs)
-- Web browsing (when facts may be current/variable or when asked)
-- Memory (store stable preferences only; avoid storing sensitive info)
-
-Turn OFF unless needed:
-
-- Image generation
-- Canvas
-
-### Step F — Save and test
-
-Save the GPT, then run a small set of tests (see [`docs/testing_checklist.md`](testing_checklist.md)).
+If a file is deprecated and replaced, ensure the Builder references the canonical file named in that topic README.
 
 ---
 
-## 3) Normal usage workflow
+## 4) Ongoing operations
 
-### Use the router
-
-For a topic:
-
-- Open `gpts/<topic>/router/00-router.md`
-- Paste the router prompt into chat
-- Give a one-sentence request
-
-The router should return:
-
-- The best prompt card filename
-- A filled-in prompt template with placeholders for missing inputs
-- Up to 3 clarifying questions (only if needed)
-
-### Use prompt cards
-
-- Open the prompt card under `gpts/<topic>/prompts/`
-- Copy/paste
-- Fill placeholders
-- Run
+- Keep changes small and reversible.
+- Update `CHANGELOG.md` for every meaningful change.
+- Flag “Builder sync required” when instructions/knowledge changed and the Builder must be updated.
 
 ---
 
-## 4) Project repo workflow (Coding & Automation)
+## 5) Router usage (topic-level)
 
-When using the Coding & Automation Copilot on a real repo, context quality determines output quality.
+The topic router should:
 
-Recommended approach:
-
-1. Copy the templates under [`docs/ai/README.md`](ai/README.md) into the target project repo as `docs/ai/`.
-2. Fill [`docs/ai/context.md`](ai/context.md)
-3. Use the “Project onboarding” prompt card to build a repo mental model
-4. Work via diffs + logs + small deltas rather than uploading the whole repo repeatedly
-
-Templates:
-
-- [`docs/ai/context.md`](ai/context.md)
-- [`docs/ai/how_we_work.md`](ai/how_we_work.md)
-- [`docs/ai/decision_log.md`](ai/decision_log.md)
+- Pick the best matching prompt card
+- Fill the prompt template with placeholders for missing inputs
+- Ask up to 3 clarifying questions only if required
 
 ---
 
-## 5) Maintenance lifecycle
+## 6) Troubleshooting Builder drift
 
-### Change types
+Symptoms of drift:
 
-1) **Prompt-only change**
+- GPT behavior does not match repo playbook
+- Old instructions still in effect
+- Knowledge pack content not reflected
 
-- Update prompt cards or router
-- Usually does not require Builder changes unless instructions reference new files
+Fix:
 
-2) **Instruction change**
-
-- Requires Builder sync (paste updated Instructions)
-
-3) **Knowledge change**
-
-- Requires Builder sync (re-upload knowledge files)
-
-### Builder sync process (repeatable)
-
-For each affected topic GPT:
-
-1. Open the topic’s `gpt-instructions/` file and copy it
-2. In Builder, replace Instructions with the latest version
-3. Upload/replace knowledge pack files if changed
-4. Save
-5. Run the topic’s tests from [`docs/testing_checklist.md`](testing_checklist.md)
-
-### Versioning
-
-- Use [`CHANGELOG.md`](../CHANGELOG.md) to record:
-  - What changed
-  - Which GPT topics are affected
-  - Whether Builder sync is required
-
-Recommended note format:
-
-- “Builder sync required: update Instructions for <topic>”
-- “Builder sync required: re-upload Knowledge pack(s) for <topic>”
+- Re-paste the canonical instructions file
+- Re-upload knowledge files
+- Re-test with 3 representative prompt cards
 
 ---
 
-## 6) Quality assurance
+## 7) Suggested “meta-router” prompt (cross-topic)
 
-Use [`docs/testing_checklist.md`](testing_checklist.md):
+Use this when you are unsure which topic to use:
 
-- Re-run tests any time instructions, routers, or knowledge packs change.
-- Spot-check that routers still reference existing prompt card filenames.
-- Confirm prompt cards remain copy/paste-ready.
+1) Classify my request into ONE topic:
+   - Career Assets (resume/LinkedIn/outreach/interview)
+   - Document Writing (proposals/SOWs/emails/memos)
+   - Business Analysis (decision support/pricing/strategy)
+   - Coding & Automation (Python/Django/automation)
+   - IT Delivery & Troubleshooting (Windows/M365/Entra/networking)
 
----
+2) Ask up to 3 clarifying questions ONLY if needed.
 
-## 7) Operational safeguards
-
-### Avoid leaking secrets
-
-- Redact tokens, keys, credentials, and sensitive internal URLs.
-- Prefer `env.example` patterns and placeholder variables.
-
-### Do not invent facts
-
-- Prompt cards and instructions should explicitly prohibit fabrication.
-- If required inputs are missing, the GPT should ask for them.
+3) Then respond with:
+   - the best matching topic folder under `gpts/`
+   - the best matching prompt card filename within that topic
+   - the filled-in prompt template with placeholders for missing inputs
 
 ---
 
-## 8) When to split a new GPT topic
+## 8) Creating a new topic
 
 Create a new topic folder when:
 
@@ -227,15 +155,23 @@ Create a new topic folder when:
 
 ## 9) Minimal “definition of done” for a topic
 
-A topic is “complete” when it has:
+This repo uses the status contract in [`docs/repo_consistency_rules.md`](repo_consistency_rules.md).
+
+A topic is “complete” when it has (minimum):
 
 - A topic README with quick start and prompt card list
-- Builder instructions
-- A router
-- At least 3–8 high-value prompt cards
-- A knowledge pack (recommended) for consistent behavior
+- Builder instructions (`gpts/<topic>/gpt-instructions/*.md`)
+- A topic router (`gpts/<topic>/router/00-router.md`)
+- At least 3 high-value prompt cards (`gpts/<topic>/prompts/*.md`)
+- At least 1 knowledge file (`gpts/<topic>/knowledge/*.md`)
 
----
+A topic is a “scaffold” when it has (minimum):
+
+- A topic README with a status line
+- Builder instructions
+- A topic router
+
+If any of the above inputs are missing, keep the topic status truthful and leave placeholders in docs until the missing pieces exist.
 
 ## 10) Common failure modes (and fixes)
 
@@ -251,12 +187,4 @@ Fix:
 
 Fix:
 
-- Use the router first
-- Narrow the request (one task at a time)
-
-### Failure: “drift” between repo and Builder
-
-Fix:
-
-- Always record Builder-required changes in [`CHANGELOG.md`](../CHANGELOG.md)
-- Run the sync process whenever instructions/knowledge changes
+- Use the router
