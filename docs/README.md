@@ -7,6 +7,7 @@ Repository documentation.
 - [`docs/custom_gpt_integration_guide.md`](custom_gpt_integration_guide.md)
 - [`docs/testing_checklist.md`](testing_checklist.md)
 - [`docs/repo_consistency_rules.md`](repo_consistency_rules.md)
+- [`docs/obsidian_notes.md`](obsidian_notes.md)
 
 ## Project onboarding templates
 

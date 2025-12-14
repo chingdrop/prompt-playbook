@@ -1,6 +1,6 @@
 # Repo Consistency Rules
 
-This file defines repo-wide conventions to keep all topics consistent and maintainable.
+This file defines repo-wide conventions to keep all topics consistent, linkable, and maintainable.
 
 ---
 
@@ -9,6 +9,11 @@ This file defines repo-wide conventions to keep all topics consistent and mainta
 Every topic folder must exist under:
 
 - `gpts/<topic>/`
+
+**Topic folder naming**
+
+- Topic folder names should be **kebab-case** (example: `gpts/it-delivery/`).
+- Markdown filenames inside a topic should be **snake_case** (example: `router/00_router.md`, `prompts/change_plan_with_rollback.md`).
 
 Each topic must include:
 
@@ -37,6 +42,7 @@ A topic is a **scaffold** if it has:
 
 - At least 1 instructions file
 - `router/00_router.md`
+- Fewer than 3 prompt cards and/or no knowledge pack yet
 
 ---
 
@@ -60,33 +66,23 @@ Routers should enumerate an explicit allowlist of prompt filenames to prevent ha
 
 ### Root README (`README.md`)
 
-Must include:
+Root README should:
 
-- Purpose and scope (manual setup, no APIs)
-- Folder structure overview
-- List of topics with **accurate statuses**
-- Links to:
-  - `docs/custom_gpt_integration_guide.md`
-  - `docs/testing_checklist.md`
-  - `docs/repo_consistency_rules.md`
-  - `docs/ai/README.md`
-
-In the root `README.md`, the link targets must include the `docs/` prefix (because the root README is at repo root).
+- explain the repo purpose
+- list topics with status
+- include the canonical paths for schemas and key docs
+- provide a clear “how to use this repo” onboarding path
 
 ### Topic README (`gpts/<topic>/README.md`)
 
-Must include:
+Topic README must:
 
-- Title + 1–2 line description
-- `**Status:** complete|scaffold`
-- “Quick start” with correct file paths:
-  - instructions file path (specific filename)
-  - knowledge upload (if present)
-  - router path
-  - prompt cards path
-- “Prompt cards” section:
-  - for complete topics: list at least 3 cards
-  - for scaffold topics: list “TBD” or a placeholder
+- declare `**Status:** complete|scaffold`
+- include a **Quick start** that references:
+  - the canonical instructions file in `gpt-instructions/`
+  - the canonical knowledge pack file in `knowledge/`
+  - `router/00_router.md`
+  - a list of prompt cards (links to `prompts/*.md`)
 
 ---
 
@@ -118,26 +114,28 @@ Use strict output formats when the use case benefits from structure.
 
 ### Changelog
 
-Repo must include `CHANGELOG.md` with:
+Update `CHANGELOG.md` for:
 
-- `## Unreleased`
-- `### Additions`
-- `### Changes`
-- `### Fixes`
-- versioned releases (e.g., `## v0.1.0`)
+- new topics
+- schema changes
+- changes that require updating deployed Custom GPTs
 
-If Builder needs updating, changelog must explicitly include:
-
-- “Builder sync required: …”
+If the Builder must be updated, label the entry: **Builder sync required**.
 
 ### Deprecation policy
 
-Do not delete replaced instruction or knowledge files.
+If a non-canonical instructions or knowledge file exists:
 
-If a file is replaced:
+- Do **not** delete it.
+- Add `# DEPRECATED` at the top.
+- Point to the canonical replacement file path.
 
-- Add `# DEPRECATED` at the top
-- Point to the canonical replacement file path
+**Canonical filenames**
+
+- Instructions canonical: `gpts/<topic>/gpt-instructions/<topic>_copilot_instructions.md`
+- Knowledge canonical: `gpts/<topic>/knowledge/<topic>_playbook.md`
+
+(If a topic has additional instruction/knowledge files, they must be marked DEPRECATED and point to the canonical file.)
 
 ---
 
@@ -146,8 +144,8 @@ If a file is replaced:
 Before merging changes:
 
 - Router selects an existing prompt card (from an explicit allowlist)
-- Prompt cards are copy/paste-ready
+- Prompt cards are copy/paste-ready and schema-aligned
 - README paths are correct
-- Status is accurate
-- Testing checklist passes
+- Status is accurate per “Status truth rules”
+- Testing checklist passes (`docs/testing_checklist.md`)
 - Changelog updated (and flags Builder sync when required)

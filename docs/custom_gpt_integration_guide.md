@@ -29,22 +29,17 @@ Out of scope:
 - Create one Custom GPT per topic under `gpts/<topic>/`.
 - Avoid one “do everything” GPT unless you have a strong routing workflow and testing discipline.
 
-### Minimize Builder drift
-
-- Every update should follow a repeatable “sync” process.
-- Keep changes small and reversible.
-
 ---
 
 ## 2) Initial setup (per topic)
 
-### Step A — Choose a topic
+### Step A — Pick the topic
 
-Use the topic index in the root README for the current, authoritative status (complete vs scaffold):
+Start at the root README:
 
 - [`README.md`](../README.md)
 
-Then open the matching topic README:
+Then open the matching topic README (examples):
 
 - [`gpts/career-assets/README.md`](../gpts/career-assets/README.md)
 - [`gpts/coding-automation/README.md`](../gpts/coding-automation/README.md)
@@ -56,25 +51,53 @@ If you are not sure which topic to use, run the global router prompt in:
 
 - [`00_router.md`](../00_router.md)
 
-### Step B — Paste builder instructions
+### Step B — Create the GPT in the Builder
+
+Open the GPT editor and create/configure your GPT:
+
+- `https://chatgpt.com/gpts/editor`
+
+In the Builder **Configure** tab, set:
+
+- Name, Description, and optional icon
+- **Instructions** (paste from the repo file below)
+- **Knowledge** (upload the repo file below)
+- Capabilities (only what you need)
+
+### Step C — Paste builder instructions (from repo)
 
 Open the topic instructions file under `gpts/<topic>/gpt-instructions/`.
 
-Copy/paste the full instructions file into the Custom GPT Builder “Instructions” field.
+Use the canonical instructions file:
 
-### Step C — Upload knowledge pack(s)
+- `gpts/<topic>/gpt-instructions/<topic>_copilot_instructions.md`
 
-If the topic contains `knowledge/*.md`, upload those files into GPT Knowledge.
+Paste the full contents into the Builder **Instructions** field.
 
-### Step D — Use the topic router + prompt cards
+### Step D — Upload knowledge pack(s)
 
-Use the topic router at:
+Upload the topic playbook file under `gpts/<topic>/knowledge/` into the Builder **Knowledge** section.
 
-- `gpts/<topic>/router/00_router.md`
+Use the canonical knowledge file:
 
-Then run the selected prompt card from:
+- `gpts/<topic>/knowledge/<topic>_playbook.md`
+
+Notes (Builder behavior):
+
+- Knowledge supports attaching multiple files; current limits and processing behavior are documented by OpenAI (for example: max files per GPT, per-file size, and text-only extraction from images).
+- Do **not** upload prompt cards into Knowledge; prompt cards are intended for copy/paste use during conversations.
+
+### Step E — Test in Preview
+
+In the Builder preview panel, run 2–3 prompt cards from:
 
 - `gpts/<topic>/prompts/*.md`
+
+Confirm:
+
+- the GPT follows guardrails
+- output format matches the prompt card
+- missing inputs become placeholders (not invented facts)
 
 ---
 
@@ -85,6 +108,11 @@ Sync the Custom GPT Builder whenever you change:
 - `gpts/<topic>/gpt-instructions/*.md`
 - `gpts/<topic>/knowledge/*.md`
 
+Strongly recommended to sync (because behavior can drift):
+
+- router logic changes in `gpts/<topic>/router/00_router.md`
+- any prompt card changes that materially affect how users operate the GPT
+
 If a file is deprecated and replaced, ensure the Builder references the canonical file named in that topic README.
 
 ---
@@ -92,86 +120,80 @@ If a file is deprecated and replaced, ensure the Builder references the canonica
 ## 4) Ongoing operations
 
 - Keep changes small and reversible.
-- Update `CHANGELOG.md` for every meaningful change.
-- Flag “Builder sync required” when instructions/knowledge changed and the Builder must be updated.
+- Prefer narrow prompt cards over sprawling instructions.
+- Always include a verification plan (tests or checklists) in prompt cards where operational risk exists.
+- Track significant changes in `CHANGELOG.md` and flag **Builder sync required** when needed.
 
 ---
 
 ## 5) Router usage (topic-level)
 
-The topic router should:
+Each topic must include a router at:
 
-- Pick the best matching prompt card
-- Fill the prompt template with placeholders for missing inputs
-- Ask up to 3 clarifying questions only if required
+- `gpts/<topic>/router/00_router.md`
+
+Routers should:
+
+- choose exactly one prompt card from an explicit allowlist
+- ask up to 3 clarifying questions only when required
+- output the selected filename and a filled template
 
 ---
 
 ## 6) Troubleshooting Builder drift
 
-Symptoms of drift:
+Symptoms:
 
-- GPT behavior does not match repo playbook
-- Old instructions still in effect
-- Knowledge pack content not reflected
+- The GPT uses the wrong tone or output format
+- The GPT “forgets” guardrails
+- The GPT references old templates or missing files
 
-Fix:
+Checklist:
 
-- Re-paste the canonical instructions file
-- Re-upload knowledge files
-- Re-test with 3 representative prompt cards
+- Confirm the Builder Instructions match the canonical repo instructions file.
+- Confirm the Builder Knowledge includes the canonical playbook file (and no unintended outdated files).
+- Confirm the topic README Quick start links match the files present in the topic folder.
+- Run the topic testing checklist: [`docs/testing_checklist.md`](testing_checklist.md)
 
 ---
 
 ## 7) Suggested “meta-router” prompt (cross-topic)
 
-Use this when you are unsure which topic to use:
+Use this prompt when a user request could fit multiple topics:
 
-1) Classify my request into ONE topic:
-   - Career Assets (resume/LinkedIn/outreach/interview)
-   - Document Writing (proposals/SOWs/emails/memos)
-   - Business Analysis (decision support/pricing/strategy)
-   - Coding & Automation (Python/Django/automation)
-   - IT Delivery & Troubleshooting (Windows/M365/Entra/networking)
-
-2) Ask up to 3 clarifying questions ONLY if needed.
-
-3) Then respond with:
-   - the best matching topic folder under `gpts/`
-   - the best matching prompt card filename within that topic
-   - the filled-in prompt template with placeholders for missing inputs
+1) Choose the best topic folder under `gpts/<topic>/` and explain why in 1–2 lines.  
+2) Output the exact topic router path to use next: `gpts/<topic>/router/00_router.md`.  
+3) Ask up to 3 clarifying questions only if required to select the topic/router.
 
 ---
 
 ## 8) Creating a new topic
 
-Create a new topic folder when:
+When creating a new topic, follow the repo contract in:
 
-- You have distinct “jobs to be done” that require different outputs and constraints
-- The instructions are starting to conflict (e.g. coding vs proposal writing)
-- The prompt library has grown beyond ~10–15 core prompt cards
+- [`docs/repo_consistency_rules.md`](repo_consistency_rules.md)
+
+Minimum structure:
+
+- `gpts/<topic>/README.md`
+- `gpts/<topic>/router/00_router.md`
+- `gpts/<topic>/gpt-instructions/<topic>_copilot_instructions.md`
+- `gpts/<topic>/knowledge/<topic>_playbook.md`
+- `gpts/<topic>/prompts/` (start with 3+ prompt cards)
 
 ---
 
 ## 9) Minimal “definition of done” for a topic
 
-This repo uses the status contract in [`docs/repo_consistency_rules.md`](repo_consistency_rules.md).
+A topic is **complete** only if it has:
 
-A topic is “complete” when it has (minimum):
+- Builder-ready instructions (canonical filename)
+- A router with an explicit allowlist
+- At least 3 high-value prompt cards (schema-aligned)
+- A knowledge playbook (canonical filename)
+- A topic README Quick start that matches reality
 
-- A topic README with quick start and prompt card list
-- Builder instructions (`gpts/<topic>/gpt-instructions/*.md`)
-- A topic router (`gpts/<topic>/router/00_router.md`)
-- At least 3 high-value prompt cards (`gpts/<topic>/prompts/*.md`)
-- At least 1 knowledge file (`gpts/<topic>/knowledge/*.md`)
-
-A topic is a “scaffold” when it has (minimum):
-
-- A topic README with a status line
-- Builder instructions
-- A topic router
-
-If any of the above inputs are missing, keep the topic status truthful and leave placeholders in docs until the missing pieces exist.
+---
 
 ## 10) Common failure modes (and fixes)
 
@@ -187,4 +209,15 @@ Fix:
 
 Fix:
 
-- Use the router
+- Use the router and ensure the allowlist maps to real prompt files
+- If the router is ambiguous, add a clarifying question and/or a more specific prompt card
+
+---
+
+## References (OpenAI Help Center)
+
+- Creating a GPT: <https://help.openai.com/en/articles/8554397-creating-a-gpt>
+- GPTs FAQ: <https://help.openai.com/en/articles/8554407-gpts-faq>
+- Knowledge in GPTs: <https://help.openai.com/en/articles/8843948-knowledge-in-gpts>
+- File Uploads FAQ: <https://help.openai.com/en/articles/8555545-file-uploads-faq>
+- ChatGPT capabilities overview: <https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview>
