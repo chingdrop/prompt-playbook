@@ -1,8 +1,16 @@
 # Debug Triage — Ranked Hypotheses + Fix Plan
 
-**Best for:** diagnosing errors and unexpected behavior quickly and safely  
-**You provide:** stack trace/logs, repro steps, environment, what you tried  
-**Output:** ranked causes + diagnostics + fix plan + rollback + verification  
+## Best for
+
+- diagnosing errors and unexpected behavior quickly and safely
+
+## You provide
+
+- stack trace/logs, repro steps, environment, what you tried
+
+## Output
+
+- ranked causes + diagnostics + fix plan + rollback + verification
 
 ## Prompt Template (copy/paste)
 

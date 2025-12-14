@@ -1,8 +1,16 @@
 # Git Diff Review — Improve Patch Quality
 
-**Best for:** tightening a change before PR  
-**You provide:** git diff + test output/logs + intent  
-**Output:** prioritized issues + improvements + patch snippets + verification checklist  
+## Best for
+
+- tightening a change before PR
+
+## You provide
+
+- git diff + test output/logs + intent
+
+## Output
+
+- prioritized issues + improvements + patch snippets + verification checklist
 
 ## Prompt Template (copy/paste)
 

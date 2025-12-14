@@ -1,8 +1,16 @@
 # Meeting Notes — Decisions + Action Items
 
-**Best for:** converting rough notes into clean minutes with owners and due dates  
-**You provide:** raw notes, attendees, date, decisions  
-**Output:** structured notes + action item table (Markdown)  
+## Best for
+
+- converting rough notes into clean minutes with owners and due dates
+
+## You provide
+
+- raw notes, attendees, date, decisions
+
+## Output
+
+- structured notes + action item table (Markdown)
 
 ## Prompt Template (copy/paste)
 

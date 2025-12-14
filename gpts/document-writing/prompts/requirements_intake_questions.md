@@ -1,8 +1,16 @@
 # Requirements Intake — Ask the Right Questions (≤ 15)
 
-**Best for:** scoping a proposal/quote when inputs are incomplete  
-**You provide:** a rough goal and context  
-**Output:** a prioritized question set + what each answer unlocks  
+## Best for
+
+- scoping a proposal/quote when inputs are incomplete
+
+## You provide
+
+- a rough goal and context
+
+## Output
+
+- a prioritized question set + what each answer unlocks
 
 ## Prompt Template (copy/paste)
 

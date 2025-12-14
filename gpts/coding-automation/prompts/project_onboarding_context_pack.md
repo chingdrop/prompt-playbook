@@ -1,8 +1,16 @@
 # Project Onboarding — Build a Working Mental Model
 
-**Best for:** starting work on a new repo quickly  
-**You provide:** context pack zip or key files + goals  
-**Output:** repo map + conventions + risk areas + next steps  
+## Best for
+
+- starting work on a new repo quickly
+
+## You provide
+
+- context pack zip or key files + goals
+
+## Output
+
+- repo map + conventions + risk areas + next steps
 
 ## Prompt Template (copy/paste)
 

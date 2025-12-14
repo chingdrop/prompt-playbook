@@ -1,8 +1,16 @@
 # Project Schedule — Milestones + Dependencies
 
-**Best for:** turning a scope into a simple schedule clients can approve  
-**You provide:** phases, constraints, lead times, required access  
-**Output:** milestone plan + dependency list + acceptance checkpoints  
+## Best for
+
+- turning a scope into a simple schedule clients can approve
+
+## You provide
+
+- phases, constraints, lead times, required access
+
+## Output
+
+- milestone plan + dependency list + acceptance checkpoints
 
 ## Prompt Template (copy/paste)
 

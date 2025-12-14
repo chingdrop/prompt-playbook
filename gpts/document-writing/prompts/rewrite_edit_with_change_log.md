@@ -1,8 +1,16 @@
 # Rewrite / Edit — Improve Clarity + Provide a Change Log
 
-**Best for:** rewriting a draft while preserving meaning and commitments  
-**You provide:** the draft and desired tone  
-**Output:** revised draft + change log + verification checklist  
+## Best for
+
+- rewriting a draft while preserving meaning and commitments
+
+## You provide
+
+- the draft and desired tone
+
+## Output
+
+- revised draft + change log + verification checklist
 
 ## Prompt Template (copy/paste)
 

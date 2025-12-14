@@ -1,8 +1,16 @@
 # Executive Summary — Technical Business Audience
 
-**Best for:** 1–2 page summaries that translate technical work into business value  
-**You provide:** problem, approach, results/metrics, risks, next steps  
-**Output:** executive summary + optional bullets for stakeholders  
+## Best for
+
+- 1–2 page summaries that translate technical work into business value
+
+## You provide
+
+- problem, approach, results/metrics, risks, next steps
+
+## Output
+
+- executive summary + optional bullets for stakeholders
 
 ## Prompt Template (copy/paste)
 

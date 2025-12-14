@@ -1,8 +1,16 @@
 # Client Email Update — Status + Next Steps
 
-**Best for:** crisp client updates that reduce back-and-forth  
-**You provide:** status, what changed, blockers, next actions, dates  
-**Output:** a client-ready email + a short internal notes section (optional)  
+## Best for
+
+- crisp client updates that reduce back-and-forth
+
+## You provide
+
+- status, what changed, blockers, next actions, dates
+
+## Output
+
+- a client-ready email + a short internal notes section (optional)
 
 ## Prompt Template (copy/paste)
 

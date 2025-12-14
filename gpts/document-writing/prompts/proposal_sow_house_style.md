@@ -1,8 +1,16 @@
 # Proposal / SOW — House Style (Numbered Headings + Scope Control)
 
-**Best for:** client-facing proposals and SOWs with explicit deliverables, exclusions, schedule, pricing, and terms  
-**You provide:** client name, scope, deliverables, assumptions, schedule, pricing, payment terms  
-**Output:** a complete proposal/SOW draft + verification checklist  
+## Best for
+
+- client-facing proposals and SOWs with explicit deliverables, exclusions, schedule, pricing, and terms
+
+## You provide
+
+- client name, scope, deliverables, assumptions, schedule, pricing, payment terms
+
+## Output
+
+- a complete proposal/SOW draft + verification checklist
 
 ## Prompt Template (copy/paste)
 

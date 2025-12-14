@@ -1,8 +1,16 @@
 # Recruiter / Agency Pitch Email (Direct, Resume Attached)
 
-**Best for:** introducing yourself to a recruiting firm with a direct, high-signal email and a short connection note  
-**You provide:** target roles, differentiators, preferences/constraints, and resume text (or upload)  
-**Output:** subject A/B + email body + LinkedIn connection request note  
+## Best for
+
+- introducing yourself to a recruiting firm with a direct, high-signal email and a short connection note
+
+## You provide
+
+- target roles, differentiators, preferences/constraints, and resume text (or upload)
+
+## Output
+
+- subject A/B + email body + LinkedIn connection request note
 
 ## Prompt Template (copy/paste)
 

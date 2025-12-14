@@ -1,8 +1,16 @@
 # Interview Prep (Role + Company)
 
-**Best for:** preparing for an upcoming interview with a pitch, likely questions, STAR outlines, and a one-page cheat sheet  
-**You provide:** role/JD, company, resume, and interview type  
-**Output:** pitch + likely questions + STAR outlines + questions to ask + 1-page cheat sheet  
+## Best for
+
+- preparing for an upcoming interview with a pitch, likely questions, STAR outlines, and a one-page cheat sheet
+
+## You provide
+
+- role/JD, company, resume, and interview type
+
+## Output
+
+- pitch + likely questions + STAR outlines + questions to ask + 1-page cheat sheet
 
 ## Prompt Template (copy/paste)
 

@@ -1,8 +1,16 @@
 # Code Review — Quality Gate + Concrete Fixes
 
-**Best for:** reviewing a PR/snippet and producing actionable improvements  
-**You provide:** code + intent + constraints + environment  
-**Output:** findings by category + prioritized fixes + improved snippets + verification  
+## Best for
+
+- reviewing a PR/snippet and producing actionable improvements
+
+## You provide
+
+- code + intent + constraints + environment
+
+## Output
+
+- findings by category + prioritized fixes + improved snippets + verification
 
 ## Prompt Template (copy/paste)
 

@@ -1,8 +1,16 @@
 # LinkedIn About + Headline
 
-**Best for:** generating a keyword-rich LinkedIn headline and an About section aligned to a target role  
-**You provide:** target role/titles, resume or career summary, and 3–5 highlight achievements  
-**Output:** headline options + About (two versions) + “Featured” recommendations + keyword checklist  
+## Best for
+
+- generating a keyword-rich LinkedIn headline and an About section aligned to a target role
+
+## You provide
+
+- target role/titles, resume or career summary, and 3–5 highlight achievements
+
+## Output
+
+- headline options + About (two versions) + “Featured” recommendations + keyword checklist
 
 ## Prompt Template (copy/paste)
 

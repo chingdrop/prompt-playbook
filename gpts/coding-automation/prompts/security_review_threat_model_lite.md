@@ -1,8 +1,16 @@
 # Security Review — Lite Threat Model + Remediation
 
-**Best for:** quickly identifying security risks in code touching auth/data/secrets  
-**You provide:** code + data sensitivity + deployment context  
-**Output:** threats + controls + fixes + logging/monitoring guidance  
+## Best for
+
+- quickly identifying security risks in code touching auth/data/secrets
+
+## You provide
+
+- code + data sensitivity + deployment context
+
+## Output
+
+- threats + controls + fixes + logging/monitoring guidance
 
 ## Prompt Template (copy/paste)
 

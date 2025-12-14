@@ -1,8 +1,16 @@
 # Refactor Safely — Behavior Preserving + Tests
 
-**Best for:** improving maintainability without changing behavior  
-**You provide:** current code, goals, constraints, expected behavior  
-**Output:** refactor plan + updated code + tests/verification  
+## Best for
+
+- improving maintainability without changing behavior
+
+## You provide
+
+- current code, goals, constraints, expected behavior
+
+## Output
+
+- refactor plan + updated code + tests/verification
 
 ## Prompt Template (copy/paste)
 

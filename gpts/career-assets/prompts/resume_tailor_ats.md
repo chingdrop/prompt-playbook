@@ -1,8 +1,16 @@
 # Resume Tailoring (ATS-safe, Truthful)
 
-**Best for:** tailoring an existing resume to a specific job description (JD) while staying fully truthful and ATS-friendly  
-**You provide:** the JD and your current resume (paste text or upload)  
-**Output:** keyword map + tailored resume + change log + gap list (in a fixed order)  
+## Best for
+
+- tailoring an existing resume to a specific job description (JD) while staying fully truthful and ATS-friendly
+
+## You provide
+
+- the JD and your current resume (paste text or upload)
+
+## Output
+
+- keyword map + tailored resume + change log + gap list (in a fixed order)
 
 ## Prompt Template (copy/paste)
 

@@ -1,8 +1,16 @@
 # Cold Outreach Email to Hiring Manager (Personalized, Non-spammy)
 
-**Best for:** writing a concise hiring-manager outreach email that is personalized and respectful  
-**You provide:** company/role/job link, hiring manager name (or “Hiring Manager”), highlights, and 1–2 specific reasons  
-**Output:** subject A/B + email body + follow-up message  
+## Best for
+
+- writing a concise hiring-manager outreach email that is personalized and respectful
+
+## You provide
+
+- company/role/job link, hiring manager name (or “Hiring Manager”), highlights, and 1–2 specific reasons
+
+## Output
+
+- subject A/B + email body + follow-up message
 
 ## Prompt Template (copy/paste)
 

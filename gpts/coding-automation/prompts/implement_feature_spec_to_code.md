@@ -1,8 +1,16 @@
 # Implement Feature — Spec to Code (with Tests)
 
-**Best for:** implementing a feature with clear acceptance criteria  
-**You provide:** requirements, constraints, interfaces/models, examples  
-**Output:** plan + code changes + tests + edge cases + deployment notes  
+## Best for
+
+- implementing a feature with clear acceptance criteria
+
+## You provide
+
+- requirements, constraints, interfaces/models, examples
+
+## Output
+
+- plan + code changes + tests + edge cases + deployment notes
 
 ## Prompt Template (copy/paste)
 

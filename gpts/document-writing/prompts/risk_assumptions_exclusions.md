@@ -1,8 +1,16 @@
 # Assumptions, Exclusions, Risks — Scope Control Package
 
-**Best for:** strengthening proposals/quotes against scope creep  
-**You provide:** scope and constraints  
-**Output:** a crisp set of assumptions, exclusions, and risks  
+## Best for
+
+- strengthening proposals/quotes against scope creep
+
+## You provide
+
+- scope and constraints
+
+## Output
+
+- a crisp set of assumptions, exclusions, and risks
 
 ## Prompt Template (copy/paste)
 

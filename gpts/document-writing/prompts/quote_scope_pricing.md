@@ -1,8 +1,16 @@
 # Quote / Estimate — Scope + Pricing (Copy/Paste Ready)
 
-**Best for:** simple estimates with clear inclusions, assumptions, and itemized pricing  
-**You provide:** included work, materials, labor rate/hours (or fixed fee), lead time  
-**Output:** quote text + itemized totals + assumptions/exclusions  
+## Best for
+
+- simple estimates with clear inclusions, assumptions, and itemized pricing
+
+## You provide
+
+- included work, materials, labor rate/hours (or fixed fee), lead time
+
+## Output
+
+- quote text + itemized totals + assumptions/exclusions
 
 ## Prompt Template (copy/paste)
 

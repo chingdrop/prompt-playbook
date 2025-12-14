@@ -1,8 +1,16 @@
 # Django Bootstrap — Project/App Setup Best Practices
 
-**Best for:** starting a Django project/app with sane defaults and security hygiene  
-**You provide:** version, deployment, DB, auth needs, tooling preferences  
-**Output:** layout tree + settings checklist + tooling + first commands + pitfalls  
+## Best for
+
+- starting a Django project/app with sane defaults and security hygiene
+
+## You provide
+
+- version, deployment, DB, auth needs, tooling preferences
+
+## Output
+
+- layout tree + settings checklist + tooling + first commands + pitfalls
 
 ## Prompt Template (copy/paste)
 

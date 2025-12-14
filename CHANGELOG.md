@@ -6,6 +6,7 @@ All notable changes to this prompt playbook monorepo.
 
 ### Additions
 
+- Add CI "playbook lint" to prevent drift (topic completeness, router allowlist, prompt card schema, Quick start link lint).
 - Add [`docs/repo_consistency_rules.md`](docs/repo_consistency_rules.md) to document repo conventions.
 - Add [`docs/ai/README.md`](docs/ai/README.md) onboarding templates (copy into target project repos).
 - Add Coding & Automation prompt cards for project onboarding and git diff review.

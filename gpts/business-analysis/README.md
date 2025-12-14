@@ -6,10 +6,10 @@ Decision memos and trade-off analysis, pricing models and assumptions, risk regi
 
 ## Quick start
 
-1. Paste builder instructions from [`gpt-instructions/business_analysis_copilot_instructions.md`](gpt-instructions/business_analysis_copilot_instructions.md) into the Custom GPT Builder.
+1. Paste builder instructions from [`gpt-instructions/business_analysis_instructions.md`](gpt-instructions/business_analysis_instructions.md) into the Custom GPT Builder.
 2. Upload [`knowledge/business_analysis_playbook.md`](knowledge/business_analysis_playbook.md) into GPT Knowledge.
 3. Use [`router/00_router.md`](router/00_router.md) to select the right prompt card.
-4. Copy a prompt card from the [Prompt cards](#prompt-cards) list below (files live under `prompts/`), fill placeholders, and run.
+4. Copy a prompt card from the [Prompt cards](#prompt-cards) below (files live under `prompts/`), fill placeholders, and run.
 
 ## Prompt cards
 

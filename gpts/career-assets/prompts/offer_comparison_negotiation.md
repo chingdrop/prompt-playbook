@@ -1,8 +1,16 @@
 # Offer Comparison + Negotiation Script
 
-**Best for:** comparing one or more offers and generating a negotiation strategy with ready-to-send templates  
-**You provide:** offer details, priorities, constraints, and role expectations  
-**Output:** comparison table + risk/effort assessment + strategy + email + call script + decision recommendation  
+## Best for
+
+- comparing one or more offers and generating a negotiation strategy with ready-to-send templates
+
+## You provide
+
+- offer details, priorities, constraints, and role expectations
+
+## Output
+
+- comparison table + risk/effort assessment + strategy + email + call script + decision recommendation
 
 ## Prompt Template (copy/paste)
 

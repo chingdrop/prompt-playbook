@@ -1,8 +1,16 @@
 # Cover Letter (Short, High-Signal)
 
-**Best for:** writing a tailored cover letter that maps to a JD without repeating the resume  
-**You provide:** JD, resume, company name/role title, and any constraints (tone/word count)  
-**Output:** final cover letter + mapping bullets (JD → proof point)  
+## Best for
+
+- writing a tailored cover letter that maps to a JD without repeating the resume
+
+## You provide
+
+- JD, resume, company name/role title, and any constraints (tone/word count)
+
+## Output
+
+- final cover letter + mapping bullets (JD → proof point)
 
 ## Prompt Template (copy/paste)
 

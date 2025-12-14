@@ -1,8 +1,16 @@
 # Automation CLI Tool — Requirements to Script (Clean IO + Logging)
 
-**Best for:** building a small automation/ETL script with predictable behavior  
-**You provide:** inputs/outputs, environment, schedule, failure behavior  
-**Output:** script/module + usage + logging + verification  
+## Best for
+
+- building a small automation/ETL script with predictable behavior
+
+## You provide
+
+- inputs/outputs, environment, schedule, failure behavior
+
+## Output
+
+- script/module + usage + logging + verification
 
 ## Prompt Template (copy/paste)
 

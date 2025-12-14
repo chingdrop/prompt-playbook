@@ -1,8 +1,16 @@
 # Resume Rewrite (Baseline, ATS-safe)
 
-**Best for:** producing a strong general-purpose resume for a target role family before tailoring to specific job descriptions  
-**You provide:** your current resume, target role family, and any constraints (geo/industries/clearance, etc.)  
-**Output:** keyword list + revised resume + metrics checklist + next-project bullet suggestions (in order)  
+## Best for
+
+- producing a strong general-purpose resume for a target role family before tailoring to specific job descriptions
+
+## You provide
+
+- your current resume, target role family, and any constraints (geo/industries/clearance, etc.)
+
+## Output
+
+- keyword list + revised resume + metrics checklist + next-project bullet suggestions (in order)
 
 ## Prompt Template (copy/paste)
 

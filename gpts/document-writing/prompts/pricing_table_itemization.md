@@ -1,8 +1,16 @@
 # Pricing Itemization — Clean Materials + Labor Totals
 
-**Best for:** turning a messy list of materials and labor into clean line items  
-**You provide:** materials list and labor assumptions  
-**Output:** itemized pricing + subtotals + total + notes  
+## Best for
+
+- turning a messy list of materials and labor into clean line items
+
+## You provide
+
+- materials list and labor assumptions
+
+## Output
+
+- itemized pricing + subtotals + total + notes
 
 ## Prompt Template (copy/paste)
 

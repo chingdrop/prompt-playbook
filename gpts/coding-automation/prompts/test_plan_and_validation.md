@@ -1,8 +1,16 @@
 # Test Plan & Validation — What to Test, How to Prove It Works
 
-**Best for:** creating a verification plan for a change when tests are missing or unclear  
-**You provide:** feature/change description, risk areas, environment  
-**Output:** prioritized test plan + cases + tooling + acceptance checks  
+## Best for
+
+- creating a verification plan for a change when tests are missing or unclear
+
+## You provide
+
+- feature/change description, risk areas, environment
+
+## Output
+
+- prioritized test plan + cases + tooling + acceptance checks
 
 ## Prompt Template (copy/paste)
 
