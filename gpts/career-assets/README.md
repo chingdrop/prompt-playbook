@@ -5,7 +5,7 @@ Resumes, LinkedIn, outreach, project case studies, interview prep, and offer neg
 
 ## Quick start
 
-1. Paste builder instructions from [gpt-instructions/career-assets_instructions.md](gpt-instructions/career-assets_instructions.md) into the Custom GPT builder.
+1. Paste builder instructions from [gpt-instructions/career-assets_instructions.md](gpt-instructions/career_assets_instructions.md) into the Custom GPT builder.
 2. Upload [knowledge/career_assets_playbook.md](knowledge/career_assets_playbook.md) into GPT Knowledge.
 3. Use [router/00_router.md](router/00_router.md) to select the right prompt card.
 4. Copy a prompt card from [prompts/](prompts/), fill placeholders, and run.
