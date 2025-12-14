@@ -1,4 +1,4 @@
-# Prompt Playbook (Monorepo)
+# Prompt Playbook
 
 A single Git repo that contains **one prompt library per Custom GPT topic**, plus shared routers and onboarding templates.
 
