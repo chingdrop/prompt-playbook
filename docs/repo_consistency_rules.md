@@ -52,6 +52,8 @@ Router must output:
 2) a filled-in prompt template (placeholders allowed)  
 3) up to 3 clarifying questions only if required  
 
+Routers should enumerate an explicit allowlist of prompt filenames to prevent hallucinated filenames.
+
 ---
 
 ## 4) README standards
@@ -64,17 +66,12 @@ Must include:
 - Folder structure overview
 - List of topics with **accurate statuses**
 - Links to:
-  - [`docs/custom_gpt_integration_guide.md`](custom_gpt_integration_guide.md)
-  - [`docs/testing_checklist.md`](testing_checklist.md)
-  - [`docs/repo_consistency_rules.md`](repo_consistency_rules.md)
-  - [`docs/ai/README.md`](ai/README.md) templates
+  - `docs/custom_gpt_integration_guide.md`
+  - `docs/testing_checklist.md`
+  - `docs/repo_consistency_rules.md`
+  - `docs/ai/README.md`
 
-Copy/paste targets for the root `README.md` (note the `docs/` prefix):
-
-- `docs/custom_gpt_integration_guide.md`
-- `docs/testing_checklist.md`
-- `docs/repo_consistency_rules.md`
-- `docs/ai/README.md`
+In the root `README.md`, the link targets must include the `docs/` prefix (because the root README is at repo root).
 
 ### Topic README (`gpts/<topic>/README.md`)
 
@@ -97,7 +94,7 @@ Must include:
 
 Every prompt card must follow the canonical schema in:
 
-- [`shared/prompt_card_schema.md`](../shared/prompt_card_schema.md)
+- `shared/prompt_card_schema.md`
 
 Do not create alternate schemas.
 
@@ -135,7 +132,7 @@ If Builder needs updating, changelog must explicitly include:
 
 ### Deprecation policy
 
-Do not delete replaced instruction files.
+Do not delete replaced instruction or knowledge files.
 
 If a file is replaced:
 
@@ -148,7 +145,7 @@ If a file is replaced:
 
 Before merging changes:
 
-- Router selects an existing prompt card
+- Router selects an existing prompt card (from an explicit allowlist)
 - Prompt cards are copy/paste-ready
 - README paths are correct
 - Status is accurate

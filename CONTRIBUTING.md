@@ -3,7 +3,7 @@
 ## Prompt card standards
 
 - Prompts must be copy/paste-ready.
-- Use the root schema in [`prompt_card_schema.md`](prompt_card_schema.md) (do not introduce alternate schemas).
+- Use the canonical schema in [`shared/prompt_card_schema.md`](shared/prompt_card_schema.md) (do not introduce alternate schemas).
 - Include an **Output Format** section (use a strict format when the use case benefits from structure).
 - Include a **verification checklist** (quality gates).
 - Ask for only the minimum required inputs.
