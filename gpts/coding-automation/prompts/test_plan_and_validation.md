@@ -18,18 +18,17 @@ Create a prioritized test plan and validation approach for the described change,
 
 - Change summary:
   [What changed and why.]
-
 - Affected areas/modules:  
-- Environment (runtime/deps):  
-- Risk areas / critical paths:  
+- Risk areas (auth, data integrity, performance, migrations):  
+- Environment constraints (CI, local only, staging available):  
 - Existing tests (if any):  
-- Constraints (deadline/tooling):  
 
 ### Constraints
 
-- Do not invent system behavior. If details are missing, ask up to 3 clarifying questions only if needed to proceed.
-- Prioritize tests by risk and user impact.
-- If tooling is unknown, provide options and state assumptions (max 5).
+- Do not invent requirements, repo contents, environment details, logs, or test results.
+- Ask up to 3 clarifying questions only if needed to proceed.
+- If assumptions are required, list them (max 5) and proceed.
+- Do not modify code/logs pasted by the user. When proposing changes, provide new code blocks clearly labeled.
 
 ### Output Format (strict)
 
@@ -53,6 +52,6 @@ Create a prioritized test plan and validation approach for the described change,
 
 ### Verification checklist
 
-- [ ] Test cases are prioritized and cover happy path + key edge cases
-- [ ] Strategy includes unit/integration/e2e where appropriate
-- [ ] Acceptance checklist is concrete and measurable
+- [ ] Test plan is prioritized by risk and acceptance checks are concrete
+- [ ] No invented details; placeholders used where inputs are missing
+- [ ] Clarifying questions are ≤ 3 and only asked if required to proceed

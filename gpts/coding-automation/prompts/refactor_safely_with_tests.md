@@ -17,22 +17,22 @@ Refactor for: [readability/testability/performance], without changing external b
 ### Inputs
 
 - Current code (paste):  
-- What it should do (expected behavior):  
-- Constraints (performance/security/deadline):  
-- Known tests (if any):  
+- Expected behavior (bullets):  
+- Pain points:  
+- Constraints (style, deps, deadline):  
 
 ### Constraints
 
-- Do not change external behavior unless explicitly requested; call out any behavior changes.
+- Do not invent requirements, repo contents, environment details, logs, or test results.
 - Ask up to 3 clarifying questions only if needed to proceed.
-- Prefer small, testable refactors with clear rollback.
+- If assumptions are required, list them (max 5) and proceed.
+- Do not modify code/logs pasted by the user. When proposing changes, provide new code blocks clearly labeled.
 
 ### Output Format (strict)
 
 **Refactor plan**
 
-- Steps:
-- Risks:
+- ...
 
 **Refactored code**
 File: `...`
@@ -53,6 +53,6 @@ File: `...`
 
 ### Verification checklist
 
-- [ ] Refactor plan is behavior-preserving
-- [ ] Updated code is complete and clearly labeled by file
-- [ ] Verification includes tests/commands and rollback plan
+- [ ] Refactor is behavior-preserving and verification includes tests + rollback
+- [ ] No invented details; placeholders used where inputs are missing
+- [ ] Clarifying questions are ≤ 3 and only asked if required to proceed

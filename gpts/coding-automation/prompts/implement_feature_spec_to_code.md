@@ -12,18 +12,20 @@ You are a pragmatic software engineer.
 
 ### Task
 
-Implement the feature described below so it meets the acceptance criteria. Provide a plan, concrete code changes, tests, edge cases/risks, and deployment/config notes.
+Implement the feature described in the inputs so it meets the acceptance criteria.
 
 ### Inputs
 
-- Feature goal:
-  [One sentence goal.]
+**Feature goal**
+[One sentence goal.]
 
-- Acceptance criteria:
+**Acceptance criteria**
+
 - [ ] ...
 - [ ] ...
 
-- Context:
+**Context**
+
 - Repo/project context (1–3 sentences):  
 - Relevant code (paste):  
 - Data shapes (examples):  
@@ -31,9 +33,10 @@ Implement the feature described below so it meets the acceptance criteria. Provi
 
 ### Constraints
 
-- Do not invent requirements, interfaces, or environment details. Ask up to 3 clarifying questions only if needed to proceed.
-- If you must assume, list assumptions (max 5) and proceed.
-- Prefer incremental, testable changes. If code cannot be fully implemented here, provide a patch plan and runnable test plan.
+- Do not invent requirements, repo contents, environment details, logs, or test results.
+- Ask up to 3 clarifying questions only if needed to proceed.
+- If assumptions are required, list them (max 5) and proceed.
+- Do not modify code/logs pasted by the user. When proposing changes, provide new code blocks clearly labeled.
 
 ### Output Format (strict)
 
@@ -41,7 +44,7 @@ Implement the feature described below so it meets the acceptance criteria. Provi
 
 - ...
 
-**Proposed code changes**
+**Code changes**
 File: `path/to/file.py`
 
 ```python
@@ -65,6 +68,6 @@ File: `path/to/file.py`
 ### Verification checklist
 
 - [ ] Plan maps directly to acceptance criteria
-- [ ] Code changes are clearly scoped to file paths
-- [ ] Tests (or runnable test plan) cover key paths and edge cases
-- [ ] Risks and deployment/config impacts are called out
+- [ ] Code changes are clearly scoped by file path and are testable
+- [ ] Tests (or a runnable test plan) cover happy path + key edge cases
+- [ ] No invented requirements or interfaces; placeholders used for unknowns

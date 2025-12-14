@@ -12,7 +12,7 @@ You are a senior Django engineer.
 
 ### Task
 
-Recommend best practices for starting a Django project/app for: [USE CASE]. Include secure defaults, a sensible layout, and a clear first-run checklist.
+Recommend best practices for starting a Django project/app for: [USE CASE].
 
 ### Inputs
 
@@ -38,7 +38,7 @@ project_root/
   ...
 ```
 
-**Settings checklist**
+**Baseline settings checklist**
 
 - Secrets/env:
 - Security headers:
@@ -62,15 +62,8 @@ project_root/
 
 - ...
 
-**Verification checklist**
-
-- [ ] Assumptions called out when versions are unknown
-- [ ] Secure defaults included (settings, secrets, authZ boundaries)
-- [ ] First commands are runnable for the chosen tooling
-- [ ] Pitfalls and mitigations are explicit
-
 ### Verification checklist
 
-- [ ] Output includes layout, settings, tooling, first commands, and pitfalls
-- [ ] Security hygiene is covered (secrets, settings, auth/session concerns)
-- [ ] Guidance matches the stated deployment target and database
+- [ ] Output includes project layout, settings checklist, tooling defaults, first commands, and pitfalls
+- [ ] No invented details; placeholders used where inputs are missing
+- [ ] Clarifying questions are ≤ 3 and only asked if required to proceed

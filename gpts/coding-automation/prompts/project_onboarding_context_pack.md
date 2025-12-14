@@ -12,31 +12,40 @@ You are a pragmatic senior engineer onboarding to a new codebase.
 
 ### Task
 
-Build a working mental model from the provided context pack or pasted files. Summarize repo structure, key flows, conventions, risks, next steps, and ask up to 10 high-value questions.
+I uploaded a project context pack. Build a working mental model.
 
 ### Inputs
 
-- Goals:
+**Goals**
+
 - What I’m trying to do next:  
 - Constraints (security/performance/deadline):  
+
+**Repo context**
 
 - Repo context pack (uploaded) OR key files (paste paths + contents):  
 
 ### Constraints
 
-- Do not invent repo contents. If key files are missing, ask for them (up to 3 questions if needed to proceed).
-- If commands or tooling are unknown, mark them explicitly as unknown rather than guessing.
-- Keep questions to a maximum of 10 and prioritize by impact on next work.
+- Do not invent requirements, repo contents, environment details, logs, or test results.
+- Ask up to 3 clarifying questions only if needed to proceed.
+- If assumptions are required, list them (max 5) and proceed.
+- Do not modify code/logs pasted by the user. When proposing changes, provide new code blocks clearly labeled.
 
 ### Output Format (strict)
 
 **Repo map**
 
-- Key modules:
-- Data flow:
-- Entry points:
+- Modules/components → responsibilities
+- Entry points (top 3)
 
-**How to run locally**
+**Critical paths (top 3 flows)**
+
+1) ...
+2) ...
+3) ...
+
+**Local dev commands**
 
 - Setup:
 - Run:
@@ -58,15 +67,8 @@ Build a working mental model from the provided context pack or pasted files. Sum
 
 - ...
 
-**Verification checklist**
-
-- [ ] Repo map includes key modules and data flow
-- [ ] Run/test/lint commands are explicit (or marked as unknown)
-- [ ] Top risk areas and next steps are actionable
-- [ ] Questions are ≤ 10 and prioritized
-
 ### Verification checklist
 
-- [ ] Repo map and conventions are grounded in provided files (no invented modules)
-- [ ] Risks and next steps are specific and actionable
-- [ ] Questions are ≤ 10 and clearly unblock progress
+- [ ] Repo map, local dev commands, risks, and questions are grounded in provided files (no invented modules)
+- [ ] No invented details; placeholders used where inputs are missing
+- [ ] Clarifying questions are ≤ 3 and only asked if required to proceed

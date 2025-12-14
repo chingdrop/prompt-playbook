@@ -12,7 +12,7 @@ You are a senior Python/Django engineer.
 
 ### Task
 
-Diagnose the issue using the exact error/trace/logs and provided context. Produce ranked hypotheses, fast diagnostics, a fix plan with rollback, and a verification checklist.
+Describe the issue and paste the **exact** error/trace/logs (no screenshots).
 
 ### Inputs
 
@@ -55,7 +55,6 @@ Diagnose the issue using the exact error/trace/logs and provided context. Produc
 
 ### Verification checklist
 
-- [ ] Hypotheses are ranked with rationale
-- [ ] Diagnostics are reversible and ordered by speed/value
-- [ ] Fix plan includes rollback
-- [ ] Verification checklist is concrete (tests/commands/observable outcomes)
+- [ ] Output includes ranked hypotheses, diagnostics, fix plan + rollback, and a concrete verification checklist
+- [ ] No invented details; placeholders used where inputs are missing
+- [ ] Clarifying questions are ≤ 3 and only asked if required to proceed

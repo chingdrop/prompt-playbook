@@ -25,10 +25,10 @@ Create an automation tool that: [WHAT IT DOES].
 
 ### Constraints
 
-- Do not invent APIs, file formats, paths, credentials, or schedules. If missing, ask or use explicit placeholders.
+- Do not invent requirements, repo contents, environment details, logs, or test results.
 - Ask up to 3 clarifying questions only if needed to proceed.
-- Prefer safe defaults: explicit exit codes, clear error messages, and structured logging.
-- If you make assumptions, list them (max 5) and proceed.
+- If assumptions are required, list them (max 5) and proceed.
+- Do not modify code/logs pasted by the user. When proposing changes, provide new code blocks clearly labeled.
 
 ### Output Format (strict)
 
@@ -36,6 +36,7 @@ Create an automation tool that: [WHAT IT DOES].
 
 - Inputs:
 - Outputs:
+- Idempotence:
 - Error handling:
 - Logging:
 
@@ -58,7 +59,6 @@ python tool.py --help
 
 ### Verification checklist
 
-- [ ] Inputs/outputs and failure behavior are explicit (no invented details)
-- [ ] Usage examples are runnable and match the proposed CLI
-- [ ] Logging and error handling are included and consistent
-- [ ] Test strategy and acceptance checklist are complete
+- [ ] Output matches the “Output Format (strict)” section
+- [ ] No invented details; placeholders used where inputs are missing
+- [ ] Clarifying questions are ≤ 3 and only asked if required to proceed
