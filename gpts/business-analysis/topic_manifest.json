@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "topic": "business-analysis",
+  "status": "complete",
+  "canonical_instructions_file": "gpt-instructions/business_analysis_instructions.md",
+  "canonical_knowledge_files": [
+    "knowledge/business_analysis_playbook.md"
+  ],
+  "router_path": "router/00_router.md",
+  "prompt_cards": [
+    {
+      "file": "assumptions_sources_log.md",
+      "purpose": "Creating a single “source of truth” log for facts, assumptions, and open questions"
+    },
+    {
+      "file": "decision_memo_tradeoffs.md",
+      "purpose": "Making a clear recommendation with explicit criteria and trade-offs"
+    },
+    {
+      "file": "kpi_framing_and_targets.md",
+      "purpose": "Defining KPIs clearly (formula, unit, owner, cadence)"
+    },
+    {
+      "file": "options_tradeoff_matrix.md",
+      "purpose": "Comparing 2–6 options using explicit evaluation criteria and scoring"
+    },
+    {
+      "file": "pricing_model_sensitivity.md",
+      "purpose": "Building a pricing model from explicit assumptions (no fabricated market data)"
+    },
+    {
+      "file": "project_plan_milestones.md",
+      "purpose": "Building a milestone plan with dependencies and acceptance criteria"
+    },
+    {
+      "file": "risk_register_mitigation.md",
+      "purpose": "Creating a practical risk register with clear mitigations and owners"
+    },
+    {
+      "file": "stakeholder_update_kpi.md",
+      "purpose": "Weekly/monthly stakeholder updates that are crisp and decision-oriented"
+    }
+  ]
+}

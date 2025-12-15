@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "topic": "document-writing",
+  "status": "complete",
+  "canonical_instructions_file": "gpt-instructions/document_writing_copilot_instructions.md",
+  "canonical_knowledge_files": [
+    "knowledge/document_writing_playbook.md"
+  ],
+  "router_path": "router/00_router.md",
+  "prompt_cards": [
+    {
+      "file": "client_email_update.md",
+      "purpose": "crisp client updates that reduce back-and-forth"
+    },
+    {
+      "file": "executive_summary.md",
+      "purpose": "1–2 page summaries that translate technical work into business value"
+    },
+    {
+      "file": "meeting_notes_action_items.md",
+      "purpose": "converting rough notes into clean minutes with owners and due dates"
+    },
+    {
+      "file": "pricing_table_itemization.md",
+      "purpose": "turning a messy list of materials and labor into clean line items"
+    },
+    {
+      "file": "project_schedule_milestones.md",
+      "purpose": "turning a scope into a simple schedule clients can approve"
+    },
+    {
+      "file": "proposal_sow_house_style.md",
+      "purpose": "client-facing proposals and SOWs with explicit deliverables, exclusions, schedule, pricing, and terms"
+    },
+    {
+      "file": "quote_scope_pricing.md",
+      "purpose": "simple estimates with clear inclusions, assumptions, and itemized pricing"
+    },
+    {
+      "file": "requirements_intake_questions.md",
+      "purpose": "scoping a proposal/quote when inputs are incomplete"
+    },
+    {
+      "file": "rewrite_edit_with_change_log.md",
+      "purpose": "rewriting a draft while preserving meaning and commitments"
+    },
+    {
+      "file": "risk_assumptions_exclusions.md",
+      "purpose": "strengthening proposals/quotes against scope creep"
+    }
+  ]
+}

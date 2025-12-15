@@ -12,14 +12,16 @@ Resumes, LinkedIn, outreach, project case studies, interview prep, and offer neg
 
 ## Prompt cards
 
-- [`resume_tailor_ats.md`](prompts/resume_tailor_ats.md) — Tailor resume to a JD (ATS-safe, truthful)
-- [`resume_rewrite_baseline.md`](prompts/resume_rewrite_baseline.md) — Baseline resume rewrite for a target role family
-- [`linkedin_about.md`](prompts/linkedin_about.md) — LinkedIn headline + About (A/B versions)
-- [`cover_letter.md`](prompts/cover_letter.md) — Short cover letter mapped to the JD
-- [`outreach_email_hiring_manager.md`](prompts/outreach_email_hiring_manager.md) — Personalized hiring manager email
-- [`recruiter_agency_pitch.md`](prompts/recruiter_agency_pitch.md) — Recruiter/agency pitch email + connection note
-- [`interview_prep.md`](prompts/interview_prep.md) — Structured interview prep + cheat sheet
-- [`offer_comparison_negotiation.md`](prompts/offer_comparison_negotiation.md) — Offer comparison + negotiation templates
+<!-- BEGIN:prompt-cards (auto-generated) -->
+- [`cover_letter.md`](prompts/cover_letter.md) — writing a tailored cover letter that maps to a JD without repeating the resume
+- [`interview_prep.md`](prompts/interview_prep.md) — preparing for an upcoming interview with a pitch, likely questions, STAR outlines, and a one-page cheat sheet
+- [`linkedin_about.md`](prompts/linkedin_about.md) — generating a keyword-rich LinkedIn headline and an About section aligned to a target role
+- [`offer_comparison_negotiation.md`](prompts/offer_comparison_negotiation.md) — comparing one or more offers and generating a negotiation strategy with ready-to-send templates
+- [`outreach_email_hiring_manager.md`](prompts/outreach_email_hiring_manager.md) — writing a concise hiring-manager outreach email that is personalized and respectful
+- [`recruiter_agency_pitch.md`](prompts/recruiter_agency_pitch.md) — introducing yourself to a recruiting firm with a direct, high-signal email and a short connection note
+- [`resume_rewrite_baseline.md`](prompts/resume_rewrite_baseline.md) — producing a strong general-purpose resume for a target role family before tailoring to specific job descriptions
+- [`resume_tailor_ats.md`](prompts/resume_tailor_ats.md) — tailoring an existing resume to a specific job description (JD) while staying fully truthful and ATS-friendly
+<!-- END:prompt-cards -->
 
 ## Output quality rules
 

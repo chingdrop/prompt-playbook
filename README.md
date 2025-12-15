@@ -17,11 +17,13 @@ This repo is optimized for **manual Custom GPT setup** (copy/paste instructions 
 
 ## Topics included
 
-- [`gpts/career-assets/README.md`](gpts/career-assets/README.md) — **complete** (instructions + knowledge + prompt cards)
-- [`gpts/coding-automation/README.md`](gpts/coding-automation/README.md) — **complete** (instructions + knowledge + prompt cards)
-- [`gpts/business-analysis/README.md`](gpts/business-analysis/README.md) — **scaffold** (instructions + router; prompt cards pending)
-- [`gpts/document-writing/README.md`](gpts/document-writing/README.md) — **scaffold** (instructions + router; prompt cards pending)
-- [`gpts/it-delivery/README.md`](gpts/it-delivery/README.md) — **scaffold** (instructions + router; prompt cards pending)
+<!-- BEGIN:topics-index (auto-generated) -->
+- [`gpts/business-analysis/README.md`](gpts/business-analysis/README.md) — **complete**
+- [`gpts/career-assets/README.md`](gpts/career-assets/README.md) — **complete**
+- [`gpts/coding-automation/README.md`](gpts/coding-automation/README.md) — **complete**
+- [`gpts/document-writing/README.md`](gpts/document-writing/README.md) — **complete**
+- [`gpts/it-delivery/README.md`](gpts/it-delivery/README.md) — **complete**
+<!-- END:topics-index -->
 
 ## Quick start
 

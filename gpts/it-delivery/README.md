@@ -9,20 +9,22 @@ Incident triage and diagnostics (Windows, M365/Entra, networking), change planni
 1. Paste builder instructions from [`gpt-instructions/it_delivery_copilot_instructions.md`](gpt-instructions/it_delivery_copilot_instructions.md) into the Custom GPT Builder.
 2. Upload [`knowledge/it_delivery_playbook.md`](knowledge/it_delivery_playbook.md) into GPT Knowledge.
 3. Use [`router/00_router.md`](router/00_router.md) to select the right prompt card.
-4. Copy a prompt card from the [Prompt cards](#prompt-cards) below (files live under `prompts/`), fill placeholders, and run.
+4. Copy a prompt card from the [Prompt cards](#prompt-cards) list below (files live under `prompts/`), fill placeholders, and run.
 
 ## Prompt cards
 
-- [`incident_triage_diagnostics.md`](prompts/incident_triage_diagnostics.md)
-- [`windows_endpoint_triage.md`](prompts/windows_endpoint_triage.md)
-- [`m365_entra_issue_triage.md`](prompts/m365_entra_issue_triage.md)
-- [`network_connectivity_triage.md`](prompts/network_connectivity_triage.md)
-- [`service_health_incident_assessment.md`](prompts/service_health_incident_assessment.md)
-- [`change_plan_with_rollback.md`](prompts/change_plan_with_rollback.md)
-- [`implementation_runbook.md`](prompts/implementation_runbook.md)
-- [`maintenance_window_checklist.md`](prompts/maintenance_window_checklist.md)
-- [`post_incident_report_pir.md`](prompts/post_incident_report_pir.md)
-- [`client_status_update.md`](prompts/client_status_update.md)
+<!-- BEGIN:prompt-cards (auto-generated) -->
+- [`change_plan_with_rollback.md`](prompts/change_plan_with_rollback.md) — Planning a change with clear steps, checkpoints, and rollback
+- [`client_status_update.md`](prompts/client_status_update.md) — Writing stakeholder updates during incidents or changes
+- [`implementation_runbook.md`](prompts/implementation_runbook.md) — Turning an implementation into a step-by-step runbook
+- [`incident_triage_diagnostics.md`](prompts/incident_triage_diagnostics.md) — Rapid incident triage using evidence-first diagnostics
+- [`m365_entra_issue_triage.md`](prompts/m365_entra_issue_triage.md) — Troubleshooting Entra ID authentication and access issues (SSO, MFA, Conditional Access)
+- [`maintenance_window_checklist.md`](prompts/maintenance_window_checklist.md) — Planning and executing maintenance windows safely
+- [`network_connectivity_triage.md`](prompts/network_connectivity_triage.md) — Diagnosing “can’t connect” and intermittent connectivity issues
+- [`post_incident_report_pir.md`](prompts/post_incident_report_pir.md) — Writing a post-incident report with a clear timeline and root cause analysis
+- [`service_health_incident_assessment.md`](prompts/service_health_incident_assessment.md) — Determining whether symptoms align with a vendor service incident (M365/Azure/ISP) vs local configuration
+- [`windows_endpoint_triage.md`](prompts/windows_endpoint_triage.md) — Diagnosing common Windows endpoint issues (startup, login, performance, update failures)
+<!-- END:prompt-cards -->
 
 ## Output quality rules
 

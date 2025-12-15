@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "topic": "coding-automation",
+  "status": "complete",
+  "canonical_instructions_file": "gpt-instructions/coding_automation_copilot_instructions.md",
+  "canonical_knowledge_files": [
+    "knowledge/coding_automation_playbook.md"
+  ],
+  "router_path": "router/00_router.md",
+  "prompt_cards": [
+    {
+      "file": "automation_cli_tool.md",
+      "purpose": "building a small automation/ETL script with predictable behavior"
+    },
+    {
+      "file": "code_review_quality_gate.md",
+      "purpose": "reviewing a PR/snippet and producing actionable improvements"
+    },
+    {
+      "file": "debug_triage_ranked_hypotheses.md",
+      "purpose": "diagnosing errors and unexpected behavior quickly and safely"
+    },
+    {
+      "file": "django_project_bootstrap_best_practices.md",
+      "purpose": "starting a Django project/app with sane defaults and security hygiene"
+    },
+    {
+      "file": "git_diff_patch_review.md",
+      "purpose": "tightening a change before PR"
+    },
+    {
+      "file": "implement_feature_spec_to_code.md",
+      "purpose": "implementing a feature with clear acceptance criteria"
+    },
+    {
+      "file": "project_onboarding_context_pack.md",
+      "purpose": "starting work on a new repo quickly"
+    },
+    {
+      "file": "refactor_safely_with_tests.md",
+      "purpose": "improving maintainability without changing behavior"
+    },
+    {
+      "file": "security_review_threat_model_lite.md",
+      "purpose": "quickly identifying security risks in code touching auth/data/secrets"
+    },
+    {
+      "file": "test_plan_and_validation.md",
+      "purpose": "creating a verification plan for a change when tests are missing or unclear"
+    }
+  ]
+}

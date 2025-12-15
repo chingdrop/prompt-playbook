@@ -9,20 +9,22 @@ Proposals, SOWs, quotes/estimates, client emails, executive summaries, and meeti
 1. Paste builder instructions from [`gpt-instructions/document_writing_copilot_instructions.md`](gpt-instructions/document_writing_copilot_instructions.md) into the Custom GPT Builder.
 2. Upload [`knowledge/document_writing_playbook.md`](knowledge/document_writing_playbook.md) into GPT Knowledge.
 3. Use [`router/00_router.md`](router/00_router.md) to select the right prompt card.
-4. Copy a prompt card from the [Prompt cards](#prompt-cards) below (files live under `prompts/`), fill placeholders, and run.
+4. Copy a prompt card from the [Prompt cards](#prompt-cards) list below (files live under `prompts/`), fill placeholders, and run.
 
 ## Prompt cards
 
-- [`proposal_sow_house_style.md`](prompts/proposal_sow_house_style.md)
-- [`quote_scope_pricing.md`](prompts/quote_scope_pricing.md)
-- [`executive_summary.md`](prompts/executive_summary.md)
-- [`client_email_update.md`](prompts/client_email_update.md)
-- [`meeting_notes_action_items.md`](prompts/meeting_notes_action_items.md)
-- [`requirements_intake_questions.md`](prompts/requirements_intake_questions.md)
-- [`rewrite_edit_with_change_log.md`](prompts/rewrite_edit_with_change_log.md)
-- [`risk_assumptions_exclusions.md`](prompts/risk_assumptions_exclusions.md)
-- [`project_schedule_milestones.md`](prompts/project_schedule_milestones.md)
-- [`pricing_table_itemization.md`](prompts/pricing_table_itemization.md)
+<!-- BEGIN:prompt-cards (auto-generated) -->
+- [`client_email_update.md`](prompts/client_email_update.md) — crisp client updates that reduce back-and-forth
+- [`executive_summary.md`](prompts/executive_summary.md) — 1–2 page summaries that translate technical work into business value
+- [`meeting_notes_action_items.md`](prompts/meeting_notes_action_items.md) — converting rough notes into clean minutes with owners and due dates
+- [`pricing_table_itemization.md`](prompts/pricing_table_itemization.md) — turning a messy list of materials and labor into clean line items
+- [`project_schedule_milestones.md`](prompts/project_schedule_milestones.md) — turning a scope into a simple schedule clients can approve
+- [`proposal_sow_house_style.md`](prompts/proposal_sow_house_style.md) — client-facing proposals and SOWs with explicit deliverables, exclusions, schedule, pricing, and terms
+- [`quote_scope_pricing.md`](prompts/quote_scope_pricing.md) — simple estimates with clear inclusions, assumptions, and itemized pricing
+- [`requirements_intake_questions.md`](prompts/requirements_intake_questions.md) — scoping a proposal/quote when inputs are incomplete
+- [`rewrite_edit_with_change_log.md`](prompts/rewrite_edit_with_change_log.md) — rewriting a draft while preserving meaning and commitments
+- [`risk_assumptions_exclusions.md`](prompts/risk_assumptions_exclusions.md) — strengthening proposals/quotes against scope creep
+<!-- END:prompt-cards -->
 
 ## Output quality rules
 

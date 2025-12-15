@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "topic": "it-delivery",
+  "status": "complete",
+  "canonical_instructions_file": "gpt-instructions/it_delivery_copilot_instructions.md",
+  "canonical_knowledge_files": [
+    "knowledge/it_delivery_playbook.md"
+  ],
+  "router_path": "router/00_router.md",
+  "prompt_cards": [
+    {
+      "file": "change_plan_with_rollback.md",
+      "purpose": "Planning a change with clear steps, checkpoints, and rollback"
+    },
+    {
+      "file": "client_status_update.md",
+      "purpose": "Writing stakeholder updates during incidents or changes"
+    },
+    {
+      "file": "implementation_runbook.md",
+      "purpose": "Turning an implementation into a step-by-step runbook"
+    },
+    {
+      "file": "incident_triage_diagnostics.md",
+      "purpose": "Rapid incident triage using evidence-first diagnostics"
+    },
+    {
+      "file": "m365_entra_issue_triage.md",
+      "purpose": "Troubleshooting Entra ID authentication and access issues (SSO, MFA, Conditional Access)"
+    },
+    {
+      "file": "maintenance_window_checklist.md",
+      "purpose": "Planning and executing maintenance windows safely"
+    },
+    {
+      "file": "network_connectivity_triage.md",
+      "purpose": "Diagnosing “can’t connect” and intermittent connectivity issues"
+    },
+    {
+      "file": "post_incident_report_pir.md",
+      "purpose": "Writing a post-incident report with a clear timeline and root cause analysis"
+    },
+    {
+      "file": "service_health_incident_assessment.md",
+      "purpose": "Determining whether symptoms align with a vendor service incident (M365/Azure/ISP) vs local configuration"
+    },
+    {
+      "file": "windows_endpoint_triage.md",
+      "purpose": "Diagnosing common Windows endpoint issues (startup, login, performance, update failures)"
+    }
+  ]
+}

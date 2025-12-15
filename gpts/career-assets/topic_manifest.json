@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "topic": "career-assets",
+  "status": "complete",
+  "canonical_instructions_file": "gpt-instructions/career_assets_instructions.md",
+  "canonical_knowledge_files": [
+    "knowledge/career_assets_playbook.md"
+  ],
+  "router_path": "router/00_router.md",
+  "prompt_cards": [
+    {
+      "file": "cover_letter.md",
+      "purpose": "writing a tailored cover letter that maps to a JD without repeating the resume"
+    },
+    {
+      "file": "interview_prep.md",
+      "purpose": "preparing for an upcoming interview with a pitch, likely questions, STAR outlines, and a one-page cheat sheet"
+    },
+    {
+      "file": "linkedin_about.md",
+      "purpose": "generating a keyword-rich LinkedIn headline and an About section aligned to a target role"
+    },
+    {
+      "file": "offer_comparison_negotiation.md",
+      "purpose": "comparing one or more offers and generating a negotiation strategy with ready-to-send templates"
+    },
+    {
+      "file": "outreach_email_hiring_manager.md",
+      "purpose": "writing a concise hiring-manager outreach email that is personalized and respectful"
+    },
+    {
+      "file": "recruiter_agency_pitch.md",
+      "purpose": "introducing yourself to a recruiting firm with a direct, high-signal email and a short connection note"
+    },
+    {
+      "file": "resume_rewrite_baseline.md",
+      "purpose": "producing a strong general-purpose resume for a target role family before tailoring to specific job descriptions"
+    },
+    {
+      "file": "resume_tailor_ats.md",
+      "purpose": "tailoring an existing resume to a specific job description (JD) while staying fully truthful and ATS-friendly"
+    }
+  ]
+}
