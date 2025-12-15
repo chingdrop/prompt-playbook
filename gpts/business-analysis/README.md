@@ -31,3 +31,4 @@ Decision memos and trade-off analysis, pricing models and assumptions, risk regi
 - Clearly separate **Facts**, **Assumptions**, and **Recommendations**.
 - Use explicit evaluation criteria and decision logic.
 - Always include a verification checklist.
+ist.

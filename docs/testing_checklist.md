@@ -4,7 +4,7 @@ Use this checklist after any significant change to a topic’s `gpt-instructions
 
 ## Core behavior
 
-- [ ] Asks ≤ 3 clarifying questions when required; otherwise proceeds.
+- [ ] Asks ≤ 3 clarifying questions only when required; otherwise proceeds.
 - [ ] Lists assumptions (max 5) if proceeding with uncertainty.
 - [ ] Does not invent facts, metrics, dates, tools, or claims.
 - [ ] Separates facts vs assumptions vs recommendations when applicable.
@@ -17,8 +17,8 @@ Use this checklist after any significant change to a topic’s `gpt-instructions
 - [ ] All router allowlisted prompt files exist under `gpts/<topic>/prompts/`.
 - [ ] Prompt filenames are snake_case (example: `change_plan_with_rollback.md`).
 - [ ] Topic README Quick start links resolve:
-  - [ ] Canonical instructions file under `gpt-instructions/`
-  - [ ] Canonical knowledge pack under `knowledge/`
+  - [ ] Canonical instructions file under `gpt-instructions/<topic>_instructions.md`
+  - [ ] Canonical knowledge pack under `knowledge/<topic>_playbook.md`
   - [ ] Router `router/00_router.md`
   - [ ] Prompt cards under `prompts/`
 
@@ -34,7 +34,7 @@ Pick three representative prompt cards from `gpts/<topic>/prompts/` and run them
 ### Document Writing
 
 - [ ] Proposal/SOW uses the schema headings and includes exclusions/assumptions.
-- [ ] Email update stays under the specified word count and includes a clear CTA.
+- [ ] Email update stays within the requested length and includes a clear CTA.
 
 ### Business Analysis
 
@@ -44,7 +44,7 @@ Pick three representative prompt cards from `gpts/<topic>/prompts/` and run them
 ### Coding & Automation
 
 - [ ] Debug triage ranks hypotheses and gives diagnostics + fix plan + verification.
-- [ ] Django start includes layout tree + security checklist + tooling defaults.
+- [ ] New feature implementation includes risk notes + tests + rollout/verification steps.
 
 ### IT Delivery
 
@@ -53,9 +53,9 @@ Pick three representative prompt cards from `gpts/<topic>/prompts/` and run them
 
 ## Builder sync check (manual)
 
-- [ ] Builder Instructions field matches the canonical `gpt-instructions/<topic>_copilot_instructions.md`.
+- [ ] Builder Instructions field matches the canonical `gpt-instructions/<topic>_instructions.md`.
 - [ ] Builder Knowledge includes the canonical `knowledge/<topic>_playbook.md` (and any additional intended knowledge files).
-- [ ] Capabilities match topic guardrails (e.g., web search enabled only when appropriate).
+- [ ] Capabilities match topic guardrails (for example: web browsing used only when appropriate).
 
 ## Regression check
 

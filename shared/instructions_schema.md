@@ -12,7 +12,27 @@ Goal: keep builder instructions **consistent**, **auditable**, and **easy to syn
 
 Recommended canonical filename per topic:
 
-- `<topic>_copilot_instructions.md`
+- `<topic>_instructions.md`
+
+- Web browsing: <ON only when asked for current facts / OFF otherwise>
+- Memory: <what is safe to remember>
+
+## Knowledge pack binding
+
+Upload the following into GPT Knowledge:
+
+- `gpts/<topic>/knowledge/<topic>_playbook.md`
+
+## Safety / legal note
+
+<If applicable, disclaimers about legal/medical/security advice.>
+
+## Maintenance note
+
+If Instructions or Knowledge change in the repo:
+
+- Update the Custom GPT Builder (sync required).
+- Record it in `CHANGELOG.md` and label: “Builder sync required.”
 
 Examples:
 
