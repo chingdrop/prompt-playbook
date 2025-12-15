@@ -2,7 +2,7 @@
   "schema_version": 1,
   "topic": "it-delivery",
   "status": "complete",
-  "canonical_instructions_file": "gpt-instructions/it_delivery_copilot_instructions.md",
+  "canonical_instructions_file": "gpt-instructions/it_delivery_instructions.md",
   "canonical_knowledge_files": [
     "knowledge/it_delivery_playbook.md"
   ],

@@ -34,18 +34,6 @@ If Instructions or Knowledge change in the repo:
 - Update the Custom GPT Builder (sync required).
 - Record it in `CHANGELOG.md` and label: “Builder sync required.”
 
-Examples:
-
-- `career_assets_copilot_instructions.md`
-- `coding_automation_copilot_instructions.md`
-- `document_writing_copilot_instructions.md`
-
-If you must replace an instructions file:
-
-- Keep the old file
-- Add a **DEPRECATED** header
-- Point to the canonical replacement
-
 ---
 
 ## 2) Required sections (instructions contract)

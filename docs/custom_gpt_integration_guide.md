@@ -70,7 +70,7 @@ Open the topic instructions file under `gpts/<topic>/gpt-instructions/`.
 
 Use the canonical instructions file:
 
-- `gpts/<topic>/gpt-instructions/<topic>_copilot_instructions.md`
+- `gpts/<topic>/gpt-instructions/<topic>_instructions.md`
 
 Paste the full contents into the Builder **Instructions** field.
 
@@ -177,7 +177,7 @@ Minimum structure:
 
 - `gpts/<topic>/README.md`
 - `gpts/<topic>/router/00_router.md`
-- `gpts/<topic>/gpt-instructions/<topic>_copilot_instructions.md`
+- `gpts/<topic>/gpt-instructions/<topic>_instructions.md`
 - `gpts/<topic>/knowledge/<topic>_playbook.md`
 - `gpts/<topic>/prompts/` (start with 3+ prompt cards)
 

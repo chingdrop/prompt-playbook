@@ -6,7 +6,7 @@ Incident triage and diagnostics (Windows, M365/Entra, networking), change planni
 
 ## Quick start
 
-1. Paste builder instructions from [`gpt-instructions/it_delivery_copilot_instructions.md`](gpt-instructions/it_delivery_copilot_instructions.md) into the Custom GPT Builder.
+1. Paste builder instructions from [`gpt-instructions/it_delivery_instructions.md`](gpt-instructions/it_delivery_instructions.md) into the Custom GPT Builder.
 2. Upload [`knowledge/it_delivery_playbook.md`](knowledge/it_delivery_playbook.md) into GPT Knowledge.
 3. Use [`router/00_router.md`](router/00_router.md) to select the right prompt card.
 4. Copy a prompt card from the [Prompt cards](#prompt-cards) list below (files live under `prompts/`), fill placeholders, and run.

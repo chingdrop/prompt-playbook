@@ -2,7 +2,7 @@
   "schema_version": 1,
   "topic": "coding-automation",
   "status": "complete",
-  "canonical_instructions_file": "gpt-instructions/coding_automation_copilot_instructions.md",
+  "canonical_instructions_file": "gpt-instructions/coding_automation_instructions.md",
   "canonical_knowledge_files": [
     "knowledge/coding_automation_playbook.md"
   ],

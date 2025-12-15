@@ -2,7 +2,7 @@
   "schema_version": 1,
   "topic": "document-writing",
   "status": "complete",
-  "canonical_instructions_file": "gpt-instructions/document_writing_copilot_instructions.md",
+  "canonical_instructions_file": "gpt-instructions/document_writing_instructions.md",
   "canonical_knowledge_files": [
     "knowledge/document_writing_playbook.md"
   ],
