@@ -22,7 +22,7 @@ Because Builder content does not auto-update from Git, drift is expected unless 
 
 A Builder sync is required when any of the following change for a topic:
 
-- `gpts/<topic>/gpt-instructions/<topic>_copilot_instructions.md`
+- `gpts/<topic>/gpt-instructions/<topic>_instructions.md`
 - `gpts/<topic>/knowledge/<topic>_playbook.md`
 
 Strongly recommended to sync when:
@@ -80,7 +80,7 @@ Fields:
 - Repo ref (commit/tag): [GIT COMMIT OR TAG]
 - Owner: CH
 - Status: in_sync
-- Notes: Instructions filename is not in canonical `<topic>_copilot_instructions.md` form yet. Consider adding canonical file + DEPRECATED header on this file in a cleanup pass.
+- Notes: -
 
 ### GPT 3
 
