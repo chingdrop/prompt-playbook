@@ -1,6 +1,10 @@
 # Project Context
 
-Fill this out with **facts**. If you are unsure, use placeholders and label them clearly.
+Fill this out with **facts**. If you are unsure, use placeholders and label them clearly (for example: `[UNKNOWN]`, `[TBD]`, `[LINK]`).
+
+Where possible, add a pointer to the source of truth (docs link, issue, PR, runbook, ticket) so the copilot can verify details.
+
+---
 
 ## 1) What this repo does
 
