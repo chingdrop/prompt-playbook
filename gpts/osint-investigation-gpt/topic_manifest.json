@@ -1,0 +1,57 @@
+{
+  "name": "organization-first-osint-investigation-copilot",
+  "version": "1.0.0",
+  "updated": "2026-01-31",
+  "topics": [
+    {
+      "id": "investigation_plan",
+      "title": "Investigation Plan (1-page)",
+      "path": "prompts/investigation_plan.md"
+    },
+    {
+      "id": "identity_card",
+      "title": "Organization Identity Card",
+      "path": "prompts/organization_identity_card.md"
+    },
+    {
+      "id": "evidence_log",
+      "title": "Evidence Log Entry",
+      "path": "prompts/evidence_log.md"
+    },
+    {
+      "id": "executive_brief",
+      "title": "Executive Brief (2\u20135 pages)",
+      "path": "prompts/executive_brief.md"
+    },
+    {
+      "id": "full_report",
+      "title": "Full Report + Appendix",
+      "path": "prompts/full_report.md"
+    },
+    {
+      "id": "rag_risk_register",
+      "title": "RAG Risk Register",
+      "path": "prompts/rag_risk_register.md"
+    },
+    {
+      "id": "disclosure_map",
+      "title": "Disclosure Map",
+      "path": "prompts/disclosure_map.md"
+    },
+    {
+      "id": "case_ledger",
+      "title": "Litigation / Regulatory Ledger",
+      "path": "prompts/case_regulatory_ledger.md"
+    },
+    {
+      "id": "claims_validation",
+      "title": "Program Claims Validation",
+      "path": "prompts/claims_validation.md"
+    },
+    {
+      "id": "allegation_register",
+      "title": "Allegation Register",
+      "path": "prompts/allegation_register.md"
+    }
+  ]
+}
